@@ -1,728 +1,721 @@
 /* ESTILOS GERAIS */
 
-body{
-   font-family: "Work Sans"; 
-   height: 800px;
+body {
+      font-family: "Work Sans";
+      height: 800px;
+      background-color: #FFF;
 }
-.btn{
-   background-color: #63BCC2; 
-   border-radius: 3px; 
-   font-weight: normal; 
-   color: #FBFBFB;
-   font-size: 1.2em;
+p{
+      font-family: raleway;
 }
-.clear{
-   clear: both;
+
+.btn {
+      background-color: #63BCC2;
+      border-radius: 3px;
+      font-weight: normal;
+      color: #FBFBFB;
+      font-size: 1.2em;
 }
-html, body{
-   height: 100%;
+
+.clear {
+      clear: both;
+}
+
+html, body {
+      height: 100%;
+}
+
+@font-face{
+      src: url(../fonts/raleway.ttf);
+      font-family: raleway;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* HEADER */
-.header{
-   position: fixed; 
-   top: 0; 
-   width: 100%; 
-   background-color: #fbfbfb; 
-   padding: 10px 0; 
-   z-index: 99; 
-   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+
+.header {
+      /* position: fixed;  */
+      /* top: 0;  */
+      width: 100%;
+      background-color: #FFF;
+      padding: 10px 0;
+      /* z-index: 99;  */
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
-.header-menu{
-   text-align: right;
+
+.header-menu {
+      text-align: right;
 }
-.header-menu li{
-   display: inline-block; 
-   margin: 30px 0px 0px 20px;
+
+.header-menu li {
+      display: inline-block;
+      margin: 30px 0px 0px 30px;
 }
-.header-menu li a{
-   color: #17171b; 
-   font-weight: 600; 
-   text-transform: uppercase; 
-   letter-spacing: .1em; 
-   font-size: 0.8em; 
-   padding: 10px 0;
+
+.header-menu li a {
+      color: #17171b;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 0.8em;
+      padding: 10px 0;
 }
-.header-menu li a:hover{
-   color: #E68C8C; 
-   border-bottom: 2px solid #E68C8C;
+
+.header-menu li a:hover {
+      color: #E68C8C;
+      border-bottom: 2px solid #E68C8C;
 }
-.header-menu li a:active{
-   color: #E68C8C;
-}
-.header-menu ul .loja-virtual a{
-   background-color: #63BCC2; 
-   color: white; 
-   padding: 10px 5px; 
-   border-radius: 3px;
-}
-.header-menu ul .loja-virtual a:hover{
-   background-color: #52a097; 
-   border-bottom: none;
+
+.header-menu li a:active {
+      color: #E68C8C;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* INTRODUÇÃO */
-.header-introducao{
-   margin-top: 97px; 
-   width: 100%; 
-   height: 550px; 
-   background: url("../img/cabecalho/bg-image-header-2.jpg") no-repeat center; 
-   text-align: center; 
-   background-position-y: 97px; 
-   background-attachment: fixed;
+
+.header-introducao {
+      /* margin-top: 97px;  */
+      width: 100%;
+      height: 100%;
+      background: url("../img/cabecalho/bg-image-header-2.jpg") no-repeat center;
+      background-size: cover;
+      text-align: center;
+      /* background-position-y: 97px;  */
+      /* background-attachment: fixed; */
 }
-.header-introducao h1{
-   font-size: 64px; 
-   font-weight: bold; 
-   text-transform: uppercase; 
-   color: #FBFBFB; 
-   text-align: center; 
-   margin-top: 35px;
+
+.header-introducao .container{
+      text-align: center;
 }
-.header-introducao .citacao{
-   max-width: 960px; 
-   font-size: 24px; 
-   font-weight: 300; 
-   color: #FBFBFB; 
-   text-align: center; 
-   margin: 88px auto; 
+
+.header-introducao h1 {
+      font-size: 64px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #FBFBFB;
+      text-align: center;
+      margin-top: 100px;
 }
-.citacao p::before{
-   content: ""; 
-   display: block; 
-   width: 100px; 
-   height: 3px; 
-   background-color: #fbfbfb; 
-   margin: 25px auto;
+
+.header-introducao h1 span {
+      display: block;
 }
-.citacao p::after{
-   content: ""; 
-   display: block; 
-   width: 100px; 
-   height: 3px; 
-   background-color: #fbfbfb; 
-   margin: 25px auto 110px auto;
+
+.header-introducao .citacao {
+      max-width: 960px;
+      font-size: 18px;
+      font-weight: 100;
+      color: #FBFBFB;
+      text-align: center;
+      margin: 88px auto;
+      line-height: 30px;
 }
-.btn-header-introducao{
-   padding: 13px 25px;
+
+.citacao p::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      background-color: #FFF;
+      margin: 25px auto;
 }
-.btn-header-introducao:hover{
-   background-color: #52a097;
+
+.citacao p::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      background-color: #FFF;
+      margin: 25px auto 110px auto;
+}
+
+.btn-header-introducao {
+      padding: 15px 35px;
+      background-color: #63BCC2;
+      border: 1px solid #63BCC2;
+      border-radius: 25px;      
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: 600;
+      font-family: raleway;
+}
+
+.btn-header-introducao:hover {
+      background-color: rgba(0, 0, 0, 0.0);
+      color: #63BCC2;
+      border: 1px solid white;
+      font-size: 0.9em;
+      font-weight: bolder;
+      font-family: raleway;
+      transition-duration: 500ms;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* BIOGRAFIA */
-.biografia .container{
-   text-align: center;
-}
-.biografia .container h1{
-   font-family: 'Dancing Script', Arial, Helvetica, sans-serif; 
-   font-size: 36px; 
-   font-weight: 600; 
-   margin-top: 48px;
-}
-.biografia .linha-biografia{
-   margin: 40px auto;
-}
-.biografia p{
-   max-width: 625px; 
-   height: 238; 
-   text-align: center; 
-   margin: 40px auto; 
-   font-size: 24px; 
-   font-weight: 300; 
-   line-height: 30px;
+.biografia{
+      height: 100%;
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* BODYFIT */
-/* └ INTRODUÇÃO */
-.introducao{
-   width: 100%; 
-   max-height: 550px; 
-   text-align: center;
-}
-.introducao .bg-introducao{
-   background: url("../img/bodyfit/bg-imagem-bodyfit.png") no-repeat center;
-   background-attachment: fixed; width: 100%;
-   background-position-y: 97px;
-   height: 544px;
-   border-top: 3px solid #e98e8e;
-   border-bottom: 3px solid #e98e8e;
-   margin-top: -3px;
-   position: absolute;
-}
-.introducao .background-fume{
-   width: 100%; 
-   height: 538px; 
-   max-height: 538px; 
-   background-color: rgba(0, 0, 0, 0.3);
-   position: relative;
-   box-sizing: border-box;
-}
-.introducao .bodyfit-content h1{
-   font-family: Work Sans, Arial, Helvetica, sans-serif;
-   text-transform: uppercase; 
-   font-size: 48px; color: #FFF; 
-   font-weight: bold;
-   margin-top: 40px;
-}
-.introducao .bodyfit-content h1::after{
-   content: ""; 
-   display: block; 
-   width: 100px; 
-   height: 3px; 
-   background-color: #fbfbfb; 
-   margin: 15px auto 80px auto;
-}
-.introducao .bodyfit-content p{
-   max-width: 900px; 
-   font-family: "Work Sans", Arial, Helvetica, sans-serif; 
-   font-size: 28px; 
-   font-weight: 300; 
-   color: #FFF; 
-   margin: 0 auto;
-   line-height: 36px;
-}
-.introducao .bodyfit-content .seta{
-   margin-top: 95px;
+.biografia .container {
+      height: 100%;
+      padding-top: 120px;
 }
 
-/* BODYFIT */
-/* └ ACOMPANHAMENTOS */
-.acompanhamentos .titulo{
-   display: none;
+.biografia .img-biografia{
+      float: left;
+      width: 480px;
+      height: 380px;
 }
 
-/* └ ACOMPANHAMENTO NUTRICIONAL */
-.acompanhamentos .acomp-nutri .imagem{
-   margin-top: 80px;
-   float: left;
-}
-.acompanhamentos .acomp-nutri .artigo{
-   margin-top: 80px;
-   width: 470px;
-   float: left;
-   margin-left: 10px;   
-}
-.acompanhamentos .acomp-nutri .artigo h1{
-   font-size: 24px; 
-   font-weight: bold; 
-   text-decoration: underline;
-   margin-bottom: 20px;    
-   text-align: center;
-   text-transform: uppercase;
-}
-.acompanhamentos .acomp-nutri p{
-   box-sizing: border-box;
-   font-size: 24px; 
-   font-weight: 300; 
-   line-height: 30px; 
-   text-align: center;
-   height: 276px;
+.biografia .img-biografia img{
+      width: 100%;
+      margin-top: 90px;
+      padding-right: 40px;
 }
 
-/* └ ACOMPANHAMENTO ESTETICO */
-.acompanhamentos .acomp-estetico .imagem{
-   margin-top: 40px;
-   float: right;
-}
-.acompanhamentos .acomp-estetico .artigo{
-   margin-top: 40px;
-   width: 470px;
-   float: left;
-   margin-right: 10px;   
-}
-.acompanhamentos .acomp-estetico .artigo h1{
-   font-size: 24px; 
-   font-weight: bold; 
-   text-decoration: underline;
-   margin-bottom: 20px;    
-   text-align: center;
-   text-transform: uppercase;
-}
-.acompanhamentos .acomp-estetico p{
-   box-sizing: border-box;
-   font-size: 24px; 
-   font-weight: 300; 
-   line-height: 30px; 
-   text-align: center;
-   height: 276px;
+.biografia .texto-biografia{
+      width: 480px;
+      float: right;
+      border-left: 1px solid rgb(199, 199, 199);
+      padding-left: 40px;
+      height: 420px;
 }
 
-/* └ MENTORING ALIMENTAR */
-.acompanhamentos .mentoring-alimentar .imagem{
-   margin-top: 40px;
-   float: left;
+.biografia .container h1 {
+      color: rgb(147, 147, 147);
+      font-family: raleway;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 30px;
 }
-.acompanhamentos .mentoring-alimentar .artigo{
-   margin-top: 40px;
-   width: 470px;
-   float: left;
-   margin-left: 10px;   
+.biografia .container h2{
+      font-family: raleway;
+      font-size: 36px;
+      color: rgb(63, 63, 63);
+      font-weight: 800;
+      margin-top: 7px;
+      margin-bottom: 15px;
 }
-.acompanhamentos .mentoring-alimentar .artigo h1{
-   font-size: 24px; 
-   font-weight: bold; 
-   text-decoration: underline;
-   margin-bottom: 20px;    
-   text-align: center;
-   text-transform: uppercase;
+
+.biografia p {
+      color: rgb(122, 122, 122);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-top: 30px;
+      margin-bottom: 30px;
 }
-.acompanhamentos .mentoring-alimentar p{
-   box-sizing: border-box;
-   font-size: 24px; 
-   font-weight: 300; 
-   line-height: 30px; 
-   text-align: center;
-   height: 276px;
+
+.biografia-button{
+      width: 100%;
 }
-.bodyfit a{
-   display: block;
-   text-align: center;
-   margin: 40px auto;
-   padding: 15px;
-   color: #fbfbfb;
-   font-size: 1.2em;
-   border-radius: 3px;
-   background-color: #63BCC2;
+input[type=submit]{
+      background-color: #FFF;
+      border: 1px solid #63BCC2;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      color: #63BCC2;
+      padding: 10px 40px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: raleway;
+      font-size: 0.9em;
 }
-.bodyfit a:hover{
-   background-color: #52a097;
+
+input[type=submit]:hover {
+      background-color: #63BCC2;
+      color: white;
+      cursor: pointer;
+      transition-duration: 500ms;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* SERVIÇOS */
-
-.servicos {
-   width: 100%;
-   background-color: #ebebeb;
-   padding-bottom: 60px;
-   padding-top: 20px;
-}
-.servicos .titulo{
-   font-family: "Dancing Script"; 
-   font-size: 36px; 
-   font-weight: 700;
-   margin-bottom: 40px;
-   text-align: center;
-}
-.servicos .titulo::after{
-   content: ""; 
-   display: block; 
-   width: 100px; 
-   height: 2px; 
-   background-color: #000; 
-   margin: 15px auto 50px auto;
+#servicos {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      padding-top: 8px;
 }
 
 /* └ CORPORAL */
-.corporal{
-   background-color: #fbfbfb;
-   width: 25%;
-   float: left;
-   position: relative;
-   text-align: center;
-   overflow: hidden;
+
+.corporal {
+      background-color: white;
+      width: 25%;
+      float: left;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
 }
-.corporal .servico-corporal .imagem{
-   display: block;
-   overflow:hidden;
-   background-color: #fbfbfb;
-   max-width: 100%;
+
+.corporal .servico-corporal .imagem {
+      display: block;
+      overflow: hidden;
+      background-color: white;
+      max-width: 100%;
 }
-.corporal .servico-corporal .logo{
-   background-color: #fbfbfb;
-   padding-bottom: 35%;
+
+.corporal .servico-corporal .logo {
+      background-color: #63BCC2;
+      padding-bottom: 35%;
 }
-.corporal .servico-corporal h1{
-   font-family: "Work Sans" Arial, Helvetica, sans-serif; 
-   text-transform: uppercase;
-   font-size: 1em; 
-   font-weight: bold; 
-   text-align: center; 
-   padding-top: 35%;
-   margin-bottom: 5px;
+
+.corporal .servico-corporal h1 {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: bolder;
+      padding-top: 35%;
+      margin-bottom: 7px;
+      color: white;
+      font-family: raleway
 }
-.corporal .bg-hover{
-   top: 0;
-   left: -100%;
-   display: block;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   background-color: rgba(243, 142, 142, 0.7);
-   transition: .7s;
-   overflow: hidden;
-   cursor: pointer;
+
+.corporal .bg-hover {
+      top: 0;
+      left: -100%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(243, 142, 142, 0.7);
+      transition: .7s;
+      overflow: hidden;
 }
-.corporal .bg-hover img{
-   margin-top:83%;
+
+.corporal .bg-hover img {
+      margin-top: 83%;
 }
-.corporal:hover .bg-hover{
-   left: 0%;
+
+.corporal:hover .bg-hover {
+      left: 0%;
 }
 
 /* └ MAKEUP */
-.makeup{
-   background-color: #fbfbfb;
-   width: 25%;
-   float: left;
-   position: relative;
-   text-align: center;
-   overflow: hidden;
+
+.makeup {
+      background-color: white;
+      width: 25%;
+      float: left;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
 }
-.makeup .servico-makeup .logo{
-   background-color: #fbfbfb;
-   padding-bottom: 35%;
+
+.makeup .servico-makeup .logo {
+      background-color: #63BCC2;
+      padding-bottom: 35%;
 }
-.makeup .servico-makeup h1{
-   font-family: "Work Sans" Arial, Helvetica, sans-serif; 
-   text-transform: uppercase;
-   font-size: 1em; 
-   font-weight: bold; 
-   padding-top: 35%; 
-   margin-bottom: 5px;
+
+.makeup .servico-makeup h1 {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: bolder;
+      padding-top: 35%;
+      margin-bottom: 7px;
+      color: white;
+      font-family: raleway
 }
-.makeup .servico-makeup .imagem{
-   display: block;
-   max-width: 100%;
+
+.makeup .servico-makeup .imagem {
+      display: block;
+      max-width: 100%;
 }
-.makeup .bg-hover{
-   top: 0;
-   left: -100%;
-   display: block;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   background-color: rgba(243, 142, 142, 0.7);
-   transition: .7s;
-   cursor: pointer;
+
+.makeup .bg-hover {
+      top: 0;
+      left: -100%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(243, 142, 142, 0.7);
+      transition: .7s;
+      cursor: pointer;
 }
-.makeup .bg-hover img{
-   margin-top:83%;
+
+.makeup .bg-hover img {
+      margin-top: 83%;
 }
-.makeup:hover .bg-hover{
-   left: 0%;
+
+.makeup:hover .bg-hover {
+      left: 0%;
 }
 
 /* └ FACIAL */
-.facial{
-   background-color: #fbfbfb;
-   width: 25%;
-   float: left;
-   position: relative;
-   text-align: center;
-   overflow: hidden;
+
+.facial {
+      background-color: white;
+      width: 25%;
+      float: left;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
 }
-.facial .servico-facial .imagem{
-   display: block;
-   overflow:hidden;
-   background-color: #fbfbfb;
-   max-width: 100%;
+
+.facial .servico-facial .imagem {
+      display: block;
+      overflow: hidden;
+      background-color: white;
+      max-width: 100%;
 }
-.facial .servico-facial .logo{
-   background-color: #fbfbfb;
-   padding-bottom: 35%;
+
+.facial .servico-facial .logo {
+      background-color: #63BCC2;
+      padding-bottom: 35%;
 }
-.facial .servico-facial h1{
-   font-family: "Work Sans" Arial, Helvetica, sans-serif; 
-   text-transform: uppercase;
-   font-size: 1em; 
-   font-weight: bold; 
-   text-align: center; 
-   padding-top: 35%;
-   margin-bottom: 5px;
+
+.facial .servico-facial h1 {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: bolder;
+      padding-top: 35%;
+      margin-bottom: 7px;
+      color: white;
+      font-family: raleway;
 }
-.facial .bg-hover{
-   top: 0;
-   left: -100%;
-   display: block;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   background-color: rgba(243, 142, 142, 0.7);
-   transition: .7s;
-   cursor: pointer;
+
+.facial .bg-hover {
+      top: 0;
+      left: -100%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(243, 142, 142, 0.7);
+      transition: .7s;
+      cursor: pointer;
 }
-.facial .bg-hover img{
-   margin-top:83%;
+
+.facial .bg-hover img {
+      margin-top: 83%;
 }
-.facial:hover .bg-hover{
-   left: 0%;
+
+.facial:hover .bg-hover {
+      left: 0%;
 }
 
 /* └ SOBRANCELHA */
-.sobrancelha{
-   background-color: #fbfbfb;
-   width: 25%;
-   float: left;
-   position: relative;
-   text-align: center;
-   overflow: hidden;
+
+.sobrancelha {
+      background-color: white;
+      width: 25%;
+      float: left;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
 }
-.sobrancelha .servico-sobrancelha .logo{
-   background-color: #fbfbfb;
-   padding-bottom: 35%;
+
+.sobrancelha .servico-sobrancelha .logo {
+      background-color: #63BCC2;
+      padding-bottom: 35%;
 }
-.sobrancelha .servico-sobrancelha h1{
-   font-family: "Work Sans" Arial, Helvetica, sans-serif; 
-   text-transform: uppercase;
-   font-size: 1em; 
-   font-weight: bold; 
-   padding-top: 35%; 
-   margin-bottom: 5px;
+
+.sobrancelha .servico-sobrancelha h1 {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: bold;
+      padding-top: 35%;
+      margin-bottom: 7px;
+      color: white;
+      font-family: raleway;
 }
-.sobrancelha .servico-sobrancelha .imagem{
-   display: block;
-   max-width: 100%;
+
+.sobrancelha .servico-sobrancelha .imagem {
+      display: block;
+      max-width: 100%;
 }
-.sobrancelha .bg-hover{
-   top: 0;
-   left: -100%;
-   display: block;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   background-color: rgba(243, 142, 142, 0.7);
-   transition: .7s;
-   cursor: pointer;
+
+.sobrancelha .bg-hover {
+      top: 0;
+      left: -100%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(243, 142, 142, 0.7);
+      transition: .7s;
+      cursor: pointer;
 }
-.sobrancelha .bg-hover img{
-   margin-top:83%;
+
+.sobrancelha .bg-hover img {
+      margin-top: 83%;
 }
-.sobrancelha:hover .bg-hover{
-   left: 0%;
+
+.sobrancelha:hover .bg-hover {
+      left: 0%;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* PRODUTOS */
-.produtos{
-   min-height: 240px;
-   background-color: #fbfbfb;
+
+.produtos {
+      height: 100%;
+      background-color: white;
 }
-.produtos-content{
-   min-height: 240px;
+
+.produtos-content {
+      min-height: 240px;
 }
-.produtos-content .titulo{
-   font-family: "Dancing Script";
-   font-size: 36px;
-   font-weight: bold;
-   text-align: center;
-   margin-top: 40px;
+
+.produtos-content .titulo {
+      font-family: "Dancing Script";
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 40px;
 }
-.produtos-content .titulo::after{
-   content: ""; 
-   display: block; 
-   width: 100px; 
-   height: 2px; 
-   background-color: #000; 
-   margin: 15px auto 50px auto;
+
+.produtos-content .titulo::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 2px;
+      background-color: #000;
+      margin: 15px auto 50px auto;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* CONTATO */
-.contato{
-   width: 100%;
-   min-height: 400px;
-   background-color: rgb(240, 240, 240);
+
+.contato {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border-top: 1px solid rgb(189, 189, 189);
 }
-.contato .titulo{
-   font-family: "Dancing Script";
-   font-size: 36px;
-   font-weight: bold;
-   text-align: center;
-   margin-top: 40px;
+
+.contato .titulo {
+      font-family: "Dancing Script";
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 40px;
 }
-.contato .titulo::after{
-      content: ""; 
-      display: block; 
-      width: 100px; 
-      height: 2px; 
-      background-color: #000; 
+
+.contato .titulo::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 2px;
+      background-color: #000;
       margin: 15px auto 50px auto;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* FOOTER */
-.footer{
-   width: 100%;
-   height: 240px;
-   background-color: #4f4d62;
+
+.footer {
+      width: 100%;
+      height: 340px;
+      background-color: #4f4d62;
 }
 
 /* └ BIOGRAFIA */
-.footer .container .biografia{
-   margin-top: 20px;
-   border-left: 1px solid rgba(255, 255, 255, 0.1);
-   height: 200px;
-   text-align: center;
+
+.footer .container .biografia {
+      margin-top: 20px;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      height: 200px;
+      text-align: center;
 }
-.footer .container .biografia img{
-   display: inline-block;
-   margin-top: 15px;
+
+.footer .container .biografia img {
+      display: inline-block;
+      margin-top: 15px;
 }
-.footer .container .biografia p{
-   margin-top: 10px;
-   margin-left: 15px;
-   text-align: center;
-   font-size: 12px;
-   line-height: 17px;
-   color: #fbfbfb;
-   font-weight: 300;
-   font-family: "Open Sans";
+
+.footer .container .biografia p {
+      margin-top: 10px;
+      margin-left: 15px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 17px;
+      color: white;
+      font-weight: 300;
+      font-family: "Open Sans";
 }
 
 /* └ CONTATO */
-.footer .container .footer-contato{
-   margin-top: 20px;
-   border-left: 1px solid rgba(255, 255, 255, 0.1);
-   height: 200px;
+
+.footer .container .footer-contato {
+      margin-top: 20px;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      height: 200px;
 }
-.footer .container .footer-contato H4{
-   font-size: 16px;
-   font-weight: bold;
-   margin-left: 20px; 
-   margin-top: 20px;
-   color: #fbfbfb;
-   font-family: "Open Sans";
+
+.footer .container .footer-contato H4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 20px;
+      margin-top: 20px;
+      color: white;
+      font-family: "Open Sans";
 }
-.footer .container .footer-contato p{
-   margin: 10px 40px;
-   text-align: left;
-   font-size: 12px;
-   line-height: 17px;
-   color: #fbfbfb;
-   font-weight: 200;
-   font-family: "Open Sans";
+
+.footer .container .footer-contato p {
+      margin: 10px 40px;
+      text-align: left;
+      font-size: 12px;
+      line-height: 17px;
+      color: white;
+      font-weight: 200;
+      font-family: "Open Sans";
 }
-.footer .container .footer-contato h5{
-   font-size: 16px;
-   font-weight: bold;
-   margin-left: 20px; 
-   margin-top: 40px;
-   color: #fbfbfb;
-   font-family: "Open Sans";
+
+.footer .container .footer-contato h5 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 20px;
+      margin-top: 40px;
+      color: white;
+      font-family: "Open Sans";
 }
 
 /* └ REDES SOCIAIS */
-.footer .container .redes-sociais{
-   display: inline-block;
-   margin-top: 20px;
-   border-left: 1px solid rgba(255, 255, 255, 0.1);
-   border-right: 1px solid rgba(255, 255, 255, 0.1);
-   height: 200px;
+
+.footer .container .redes-sociais {
+      display: inline-block;
+      margin-top: 20px;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      height: 200px;
 }
-.footer .container .redes-sociais h6{
-   font-size: 16px;
-   font-weight: bold;
-   margin-left: 20px; 
-   margin-top: 20px;
-   color: #fbfbfb;
-   font-family: "Open Sans";
+
+.footer .container .redes-sociais h6 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 20px;
+      margin-top: 20px;
+      color: white;
+      font-family: "Open Sans";
 }
-.footer .container .redes-sociais .facebook{
-   width: 100%;
-   margin-top: 30px;
-   padding-left: 30px;   
+
+.footer .container .redes-sociais .facebook {
+      width: 100%;
+      margin-top: 30px;
+      padding-left: 30px;
 }
-.footer .container .redes-sociais .facebook img{
-   float: left;
-   margin-left: 10px;
-   width: 24px;
+
+.footer .container .redes-sociais .facebook img {
+      float: left;
+      margin-left: 10px;
+      width: 24px;
 }
-.footer .container .redes-sociais .facebook a{
-   box-sizing: border-box;
-   display: inline-block;
-   margin: 5px 10px;
-   color: #fbfbfb;
-   font-family: "Open Sans";
-   font-size: 14px;
-   font-weight: 500;
+
+.footer .container .redes-sociais .facebook a {
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 5px 10px;
+      color: white;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 500;
 }
-.footer .container .redes-sociais .facebook a:hover, a:visited, a:active{
-   color: #fbfbfb;
+
+.footer .container .redes-sociais .facebook a:hover, a:visited, a:active {
+      color: white;
 }
-.footer .container .redes-sociais .instagram{
-   width: 100%;
-   margin-top: 15px;
-   padding-left: 30px;   
+
+.footer .container .redes-sociais .instagram {
+      width: 100%;
+      margin-top: 15px;
+      padding-left: 30px;
 }
-.footer .container .redes-sociais .instagram img{
-   float: left;
-   margin-left: 10px;
-   width: 24px;
+
+.footer .container .redes-sociais .instagram img {
+      float: left;
+      margin-left: 10px;
+      width: 24px;
 }
-.footer .container .redes-sociais .instagram a{
-   box-sizing: border-box;
-   display: inline-block;
-   margin: 5px 10px;
-   color: #fbfbfb;
-   font-family: "Open Sans";
-   font-size: 14px;
-   font-weight: 500;
+
+.footer .container .redes-sociais .instagram a {
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 5px 10px;
+      color: white;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 500;
 }
-.footer .container .redes-sociais .instagram a:hover, a:visited, a:active{
-   color: #fbfbfb;
+
+.footer .container .redes-sociais .instagram a:hover, a:visited, a:active {
+      color: white;
 }
-.footer .container .redes-sociais .youtube{
-   width: 100%;
-   margin-top: 15px;
-   padding-left: 30px;   
+
+.footer .container .redes-sociais .youtube {
+      width: 100%;
+      margin-top: 15px;
+      padding-left: 30px;
 }
-.footer .container .redes-sociais .youtube img{
-   float: left;
-   margin-left: 10px;
-   width: 24px;
+
+.footer .container .redes-sociais .youtube img {
+      float: left;
+      margin-left: 10px;
+      width: 24px;
 }
-.footer .container .redes-sociais .youtube a{
-   box-sizing: border-box;
-   display: inline-block;
-   margin: 5px 10px;
-   color: #fbfbfb;
-   font-family: "Open Sans";
-   font-size: 14px;
-   font-weight: 500;
+
+.footer .container .redes-sociais .youtube a {
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 5px 10px;
+      color: white;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 500;
 }
-.footer .container .redes-sociais .youtube a:hover, a:visited, a:active{
-   color: #fbfbfb;
+
+.footer .container .redes-sociais .youtube a:hover, a:visited, a:active {
+      color: white;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* COPYRIGHT */
 
-.copyright{
-   text-align: center;
-   background-color: #F0F0F0;
-   width: 100%;
-   height: 35px;
+.copyright {
+      text-align: center;
+      background-color: white;
+      width: 100%;
+      height: 35px;
 }
-.copyright h3{   
-   font-family: "Open Sans";
-   font-size: 12px;
-   font-weight: 500;
-   margin-top: 5px;
-   color: #6e6e6e;
+
+.copyright h3 {
+      display: inline-block;
+      font-family: "Open Sans";
+      font-size: 12px;
+      font-weight: 500;
+      color: #6e6e6e;
 }
-.copyright .hadasoftware-link{
-   display: inline-block;
-   font-family: "Open Sans";
-   font-size: 12px;
-   font-weight: 500;
-   margin-top: 5px;  
-   color: #6e6e6e;
+
+.copyright img{
+      display: inline-block;
+      margin: 3px 30px;
 }
-.copyright .hadasoftware-link:hover, .hadasoftware-link:visited, .hadasoftware-link:active{
-   color: #6e6e6e;
+
+.copyright .hadasoftware-link {
+      display: inline-block;
+      font-family: "Open Sans";
+      font-size: 12px;
+      font-weight: 500;
+      color: #6e6e6e;
+}
+
+.copyright .hadasoftware-link:hover, .hadasoftware-link:visited, .hadasoftware-link:active {
+      color: #6e6e6e;
 }
