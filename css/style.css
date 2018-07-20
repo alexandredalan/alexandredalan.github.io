@@ -5,7 +5,8 @@ body {
       height: 800px;
       background-color: #FFF;
 }
-p{
+
+p {
       font-family: raleway;
 }
 
@@ -25,15 +26,17 @@ html, body {
       height: 100%;
 }
 
-@font-face{
+@font-face {
       src: url(../fonts/raleway.ttf);
       font-family: raleway;
 }
 
+input:focus{
+      outline: none;
+}
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* HEADER */
-
 .header {
       /* position: fixed;  */
       /* top: 0;  */
@@ -74,7 +77,6 @@ html, body {
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* INTRODUÇÃO */
-
 .header-introducao {
       /* margin-top: 97px;  */
       width: 100%;
@@ -87,7 +89,17 @@ html, body {
 }
 
 .header-introducao .container{
-      text-align: center;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
 .header-introducao h1 {
@@ -96,14 +108,13 @@ html, body {
       text-transform: uppercase;
       color: #FBFBFB;
       text-align: center;
-      margin-top: 100px;
 }
 
 .header-introducao h1 span {
       display: block;
 }
 
-.header-introducao .citacao {
+.header-introducao .citacao p{
       max-width: 960px;
       font-size: 18px;
       font-weight: 100;
@@ -119,7 +130,7 @@ html, body {
       width: 100px;
       height: 3px;
       background-color: #FFF;
-      margin: 25px auto;
+      margin: 0 auto 25px auto;
 }
 
 .citacao p::after {
@@ -128,10 +139,14 @@ html, body {
       width: 100px;
       height: 3px;
       background-color: #FFF;
-      margin: 25px auto 110px auto;
+      margin: 25px auto 0 auto;
 }
 
-.btn-header-introducao {
+.botao {
+      margin-top: 15px;
+}
+
+.botao-header-introducao {
       padding: 15px 35px;
       background-color: #63BCC2;
       border: 1px solid #63BCC2;
@@ -147,7 +162,7 @@ html, body {
       font-family: raleway;
 }
 
-.btn-header-introducao:hover {
+.botao-header-introducao:hover {
       background-color: rgba(0, 0, 0, 0.0);
       color: #63BCC2;
       border: 1px solid white;
@@ -160,28 +175,34 @@ html, body {
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* BIOGRAFIA */
-.biografia{
+.biografia {
       height: 100%;
 }
 
 .biografia .container {
       height: 100%;
-      padding-top: 120px;
+      min-height: 100%;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
 }
 
-.biografia .img-biografia{
+.biografia .img-biografia {
       float: left;
       width: 480px;
       height: 380px;
 }
 
-.biografia .img-biografia img{
+.biografia .img-biografia img {
       width: 100%;
       margin-top: 90px;
       padding-right: 40px;
 }
 
-.biografia .texto-biografia{
+.biografia .texto-biografia {
       width: 480px;
       float: right;
       border-left: 1px solid rgb(199, 199, 199);
@@ -196,7 +217,8 @@ html, body {
       font-weight: 600;
       margin-top: 30px;
 }
-.biografia .container h2{
+
+.biografia .container h2 {
       font-family: raleway;
       font-size: 36px;
       color: rgb(63, 63, 63);
@@ -211,13 +233,14 @@ html, body {
       font-weight: 400;
       line-height: 25px;
       margin-top: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 45px;
 }
 
-.biografia-button{
+.biografia-button {
       width: 100%;
 }
-input[type=submit]{
+
+.biografia a {
       background-color: #FFF;
       border: 1px solid #63BCC2;
       border-radius: 25px;
@@ -233,265 +256,318 @@ input[type=submit]{
       font-size: 0.9em;
 }
 
-input[type=submit]:hover {
+.biografia a:hover {
       background-color: #63BCC2;
       color: white;
       cursor: pointer;
       transition-duration: 500ms;
 }
-
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* SERVIÇOS */
 #servicos {
-      width: 100%;
-      height: 100%;
       background-color: white;
-      padding-top: 8px;
+      height: 100%;
+      width: 100%;
+}
+
+.servicos {
+      height: 100%;
+      width: 100%;
+      min-height: 100%;
+      display: flex;
+      display: -webkit-flex;
+      align-items: left;
+      -webkit-align-items: left;
+      justify-content: left;
+      -webkit-justify-content: flex-start;
+      flex-wrap: nowrap;
 }
 
 /* └ CORPORAL */
-
-.corporal {
-      background-color: white;
+.servicos .corporal {
       width: 25%;
-      float: left;
-      position: relative;
+      max-width: 25%;
+      height: 100%;
       text-align: center;
-      overflow: hidden;
+      z-index: 10;
 }
 
-.corporal .servico-corporal .imagem {
-      display: block;
-      overflow: hidden;
-      background-color: white;
+.servicos .corporal .bg-corporal {
+      height: 50%;
+      max-height: 50%;
+      width: 100%;
       max-width: 100%;
+      background: url('../img/servicos/image-corporal.png') no-repeat;
+      background-size: cover;
+      background-position: center;
 }
 
-.corporal .servico-corporal .logo {
+.servicos .corporal .logo {
+      height: 50%;
+      max-height: 50%;
+      width: 100%;
+      max-width: 100%;
       background-color: #63BCC2;
-      padding-bottom: 35%;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
-.corporal .servico-corporal h1 {
+.servicos .corporal .logo .conteudo h1 {
       text-transform: uppercase;
       font-size: 0.9em;
       font-weight: bolder;
-      padding-top: 35%;
-      margin-bottom: 7px;
+      margin-bottom: 5px;
       color: white;
       font-family: raleway
 }
 
-.corporal .bg-hover {
-      top: 0;
-      left: -100%;
-      display: block;
+.servicos .corporal .bg-hover {
       width: 100%;
+      max-width: 100%;
       height: 100%;
-      position: absolute;
+      max-height: 100%;
       background-color: rgba(243, 142, 142, 0.7);
+      margin-left: -101%;
+      margin-top: -635px;
       transition: .7s;
       overflow: hidden;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
-.corporal .bg-hover img {
-      margin-top: 83%;
-}
-
-.corporal:hover .bg-hover {
-      left: 0%;
+.servicos .corporal:hover .bg-hover {
+      margin-left: 0%;
 }
 
 /* └ MAKEUP */
-
-.makeup {
-      background-color: white;
+.servicos .makeup {
+      z-index: 9;
       width: 25%;
-      float: left;
-      position: relative;
+      max-width: 25%;
+      height: 100%;
       text-align: center;
-      overflow: hidden;
 }
 
-.makeup .servico-makeup .logo {
-      background-color: #63BCC2;
-      padding-bottom: 35%;
-}
-
-.makeup .servico-makeup h1 {
+.servicos .makeup .logo .conteudo h1 {
       text-transform: uppercase;
       font-size: 0.9em;
       font-weight: bolder;
-      padding-top: 35%;
-      margin-bottom: 7px;
+      margin-bottom: 5px;
       color: white;
       font-family: raleway
 }
 
-.makeup .servico-makeup .imagem {
-      display: block;
-      max-width: 100%;
-}
-
-.makeup .bg-hover {
-      top: 0;
-      left: -100%;
-      display: block;
+.servicos .makeup .bg-hover {
       width: 100%;
+      max-width: 100%;
       height: 100%;
-      position: absolute;
+      max-height: 100%;
       background-color: rgba(243, 142, 142, 0.7);
+      margin-left: -101%;
+      margin-top: -635px;
       transition: .7s;
-      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
-.makeup .bg-hover img {
-      margin-top: 83%;
+.servicos .makeup:hover .bg-hover {
+      margin-left: 0%;
 }
 
-.makeup:hover .bg-hover {
-      left: 0%;
+.servicos .makeup .bg-makeup {
+      height: 50%;
+      max-height: 50%;
+      width: 100%;
+      max-width: 100%;
+      background: url('../img/servicos/image-makeup.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+.servicos .makeup .logo {
+      height: 50%;
+      max-height: 50%;
+      width: 100%;
+      max-width: 100%;
+      background-color: #63BCC2;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
 /* └ FACIAL */
-
-.facial {
-      background-color: white;
+.servicos .facial {
+      z-index: 8; 
       width: 25%;
-      float: left;
-      position: relative;
+      max-width: 25%;
+      height: 100%;
       text-align: center;
-      overflow: hidden;
 }
 
-.facial .servico-facial .imagem {
-      display: block;
-      overflow: hidden;
-      background-color: white;
+.servicos .facial .bg-facial {
+      height: 50%;
+      max-height: 50%;
+      width: 100%;
       max-width: 100%;
+      background: url('../img/servicos/image-facial.png') no-repeat;
+      background-size: cover;
+      background-position: center;
 }
 
-.facial .servico-facial .logo {
+.servicos .facial .logo {
+      height: 50%;
+      max-height: 50%;
+      width: 100%;
+      max-width: 100%;
       background-color: #63BCC2;
-      padding-bottom: 35%;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
-.facial .servico-facial h1 {
+.servicos .facial .logo .conteudo h1 {
       text-transform: uppercase;
       font-size: 0.9em;
       font-weight: bolder;
-      padding-top: 35%;
-      margin-bottom: 7px;
+      margin-bottom: 5px;
       color: white;
-      font-family: raleway;
+      font-family: raleway
 }
 
-.facial .bg-hover {
-      top: 0;
-      left: -100%;
-      display: block;
+.servicos .facial .bg-hover {
       width: 100%;
+      max-width: 100%;
       height: 100%;
-      position: absolute;
+      max-height: 100%;
       background-color: rgba(243, 142, 142, 0.7);
+      margin-left: -101%;
+      margin-top: -635px;
       transition: .7s;
-      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
-.facial .bg-hover img {
-      margin-top: 83%;
-}
-
-.facial:hover .bg-hover {
-      left: 0%;
+.servicos .facial:hover .bg-hover {
+      margin-left: 0%;
 }
 
 /* └ SOBRANCELHA */
-
-.sobrancelha {
-      background-color: white;
+.servicos .sobrancelha {
+      z-index: 7;
       width: 25%;
-      float: left;
-      position: relative;
+      max-width: 25%;
+      height: 100%;
       text-align: center;
-      overflow: hidden;
 }
 
-.sobrancelha .servico-sobrancelha .logo {
+.servicos .sobrancelha .bg-sobrancelha {
+      height: 50%;
+      max-height: 50%;
+      width: 100%;
+      max-width: 100%;
+      background: url('../img/servicos/image-sobrancelha.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+.servicos .sobrancelha .logo {
+      height: 50%;
+      max-height: 50%;
+      width: 100%;
+      max-width: 100%;
       background-color: #63BCC2;
-      padding-bottom: 35%;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
-.sobrancelha .servico-sobrancelha h1 {
+.servicos .sobrancelha .logo .conteudo h1 {
       text-transform: uppercase;
       font-size: 0.9em;
-      font-weight: bold;
-      padding-top: 35%;
-      margin-bottom: 7px;
+      font-weight: bolder;
+      margin-bottom: 5px;
       color: white;
-      font-family: raleway;
+      font-family: raleway
 }
 
-.sobrancelha .servico-sobrancelha .imagem {
-      display: block;
-      max-width: 100%;
-}
-
-.sobrancelha .bg-hover {
-      top: 0;
-      left: -100%;
-      display: block;
+.servicos .sobrancelha .bg-hover {
       width: 100%;
+      max-width: 100%;
       height: 100%;
-      position: absolute;
+      max-height: 100%;
       background-color: rgba(243, 142, 142, 0.7);
+      margin-left: -101%;
+      margin-top: -635px;
       transition: .7s;
-      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
 }
 
-.sobrancelha .bg-hover img {
-      margin-top: 83%;
-}
-
-.sobrancelha:hover .bg-hover {
-      left: 0%;
+.servicos .sobrancelha:hover .bg-hover {
+      margin-left: 0%;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* PRODUTOS */
-
 .produtos {
       height: 100%;
+      width: 100%;
       background-color: white;
-}
-
-.produtos-content {
-      min-height: 240px;
-}
-
-.produtos-content .titulo {
-      font-family: "Dancing Script";
-      font-size: 36px;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 40px;
-}
-
-.produtos-content .titulo::after {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 2px;
-      background-color: #000;
-      margin: 15px auto 50px auto;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* CONTATO */
-
 .contato {
       width: 100%;
       height: 100%;
@@ -499,195 +575,18 @@ input[type=submit]:hover {
       border-top: 1px solid rgb(189, 189, 189);
 }
 
-.contato .titulo {
-      font-family: "Dancing Script";
-      font-size: 36px;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 40px;
-}
-
-.contato .titulo::after {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 2px;
-      background-color: #000;
-      margin: 15px auto 50px auto;
-}
-
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* FOOTER */
-
 .footer {
       width: 100%;
       height: 340px;
       background-color: #4f4d62;
 }
 
-/* └ BIOGRAFIA */
-
-.footer .container .biografia {
-      margin-top: 20px;
-      border-left: 1px solid rgba(255, 255, 255, 0.1);
-      height: 200px;
-      text-align: center;
-}
-
-.footer .container .biografia img {
-      display: inline-block;
-      margin-top: 15px;
-}
-
-.footer .container .biografia p {
-      margin-top: 10px;
-      margin-left: 15px;
-      text-align: center;
-      font-size: 12px;
-      line-height: 17px;
-      color: white;
-      font-weight: 300;
-      font-family: "Open Sans";
-}
-
-/* └ CONTATO */
-
-.footer .container .footer-contato {
-      margin-top: 20px;
-      border-left: 1px solid rgba(255, 255, 255, 0.1);
-      height: 200px;
-}
-
-.footer .container .footer-contato H4 {
-      font-size: 16px;
-      font-weight: bold;
-      margin-left: 20px;
-      margin-top: 20px;
-      color: white;
-      font-family: "Open Sans";
-}
-
-.footer .container .footer-contato p {
-      margin: 10px 40px;
-      text-align: left;
-      font-size: 12px;
-      line-height: 17px;
-      color: white;
-      font-weight: 200;
-      font-family: "Open Sans";
-}
-
-.footer .container .footer-contato h5 {
-      font-size: 16px;
-      font-weight: bold;
-      margin-left: 20px;
-      margin-top: 40px;
-      color: white;
-      font-family: "Open Sans";
-}
-
-/* └ REDES SOCIAIS */
-
-.footer .container .redes-sociais {
-      display: inline-block;
-      margin-top: 20px;
-      border-left: 1px solid rgba(255, 255, 255, 0.1);
-      border-right: 1px solid rgba(255, 255, 255, 0.1);
-      height: 200px;
-}
-
-.footer .container .redes-sociais h6 {
-      font-size: 16px;
-      font-weight: bold;
-      margin-left: 20px;
-      margin-top: 20px;
-      color: white;
-      font-family: "Open Sans";
-}
-
-.footer .container .redes-sociais .facebook {
-      width: 100%;
-      margin-top: 30px;
-      padding-left: 30px;
-}
-
-.footer .container .redes-sociais .facebook img {
-      float: left;
-      margin-left: 10px;
-      width: 24px;
-}
-
-.footer .container .redes-sociais .facebook a {
-      box-sizing: border-box;
-      display: inline-block;
-      margin: 5px 10px;
-      color: white;
-      font-family: "Open Sans";
-      font-size: 14px;
-      font-weight: 500;
-}
-
-.footer .container .redes-sociais .facebook a:hover, a:visited, a:active {
-      color: white;
-}
-
-.footer .container .redes-sociais .instagram {
-      width: 100%;
-      margin-top: 15px;
-      padding-left: 30px;
-}
-
-.footer .container .redes-sociais .instagram img {
-      float: left;
-      margin-left: 10px;
-      width: 24px;
-}
-
-.footer .container .redes-sociais .instagram a {
-      box-sizing: border-box;
-      display: inline-block;
-      margin: 5px 10px;
-      color: white;
-      font-family: "Open Sans";
-      font-size: 14px;
-      font-weight: 500;
-}
-
-.footer .container .redes-sociais .instagram a:hover, a:visited, a:active {
-      color: white;
-}
-
-.footer .container .redes-sociais .youtube {
-      width: 100%;
-      margin-top: 15px;
-      padding-left: 30px;
-}
-
-.footer .container .redes-sociais .youtube img {
-      float: left;
-      margin-left: 10px;
-      width: 24px;
-}
-
-.footer .container .redes-sociais .youtube a {
-      box-sizing: border-box;
-      display: inline-block;
-      margin: 5px 10px;
-      color: white;
-      font-family: "Open Sans";
-      font-size: 14px;
-      font-weight: 500;
-}
-
-.footer .container .redes-sociais .youtube a:hover, a:visited, a:active {
-      color: white;
-}
-
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* COPYRIGHT */
-
 .copyright {
       text-align: center;
       background-color: white;
@@ -703,7 +602,7 @@ input[type=submit]:hover {
       color: #6e6e6e;
 }
 
-.copyright img{
+.copyright img {
       display: inline-block;
       margin: 3px 30px;
 }
