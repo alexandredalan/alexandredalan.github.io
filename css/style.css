@@ -564,7 +564,7 @@ input:focus{
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* PRODUTOS */
-.produtos {
+.produto {
       height: 100%;
       width: 100%;
       background-color: white;
@@ -574,12 +574,33 @@ input:focus{
 
 /* CONTATO */
 .contato {
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      border-top: 1px solid rgb(189, 189, 189);
+      background: rgb(68, 111, 165);
+      background: linear-gradient(to top left, rgb(68, 111, 165),  rgb(122, 195, 152));
 }
 
+.contato .contato-conteudo {
+      border: 1px solid red;
+      height: 100%;
+      display: flex;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo {
+      float: left;
+      width: 60%;
+      border-right: 1px solid white;      
+}
+
+.contato .contato-conteudo .conteudo-esquerdo h1{
+      font-size: 2.5em;
+      font-weight: 600;
+      font-family: raleway;
+      text-transform: uppercase;
+}
+
+.contato .contato-conteudo .conteudo-direito {
+      float: left;
+      width: 40%;
+}
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* FOOTER */
