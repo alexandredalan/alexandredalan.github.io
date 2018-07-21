@@ -31,7 +31,7 @@ html, body {
       font-family: raleway;
 }
 
-input:focus{
+input:focus, textarea:focus{
       outline: none;
 }
 
@@ -268,13 +268,6 @@ input:focus{
       height: 100%;
       width: 100%;
       min-height: 100%;
-      /* display: flex;
-      display: -webkit-flex;
-      align-items: left;
-      -webkit-align-items: left;
-      justify-content: left;
-      -webkit-justify-content: flex-start;
-      flex-wrap: nowrap; */
 }
 
 /* └ CORPORAL */
@@ -303,7 +296,8 @@ input:focus{
       max-height: 50%;
       width: 100%;
       max-width: 100%;
-      background-color: #63BCC2;
+      /* background-color: #63BCC2; */
+      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -408,7 +402,8 @@ input:focus{
       max-height: 50%;
       width: 100%;
       max-width: 100%;
-      background-color: #63BCC2;
+      /* background-color: #63BCC2; */
+      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -445,7 +440,8 @@ input:focus{
       max-height: 50%;
       width: 100%;
       max-width: 100%;
-      background-color: #63BCC2;
+      /* background-color: #63BCC2; */
+      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -516,7 +512,8 @@ input:focus{
       max-height: 50%;
       width: 100%;
       max-width: 100%;
-      background-color: #63BCC2;
+      /* background-color: #63BCC2; */
+      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -574,32 +571,134 @@ input:focus{
 
 /* CONTATO */
 .contato {
-      background: rgb(68, 111, 165);
-      background: linear-gradient(to top left, rgb(68, 111, 165),  rgb(122, 195, 152));
+      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
 }
 
 .contato .contato-conteudo {
-      border: 1px solid red;
       height: 100%;
       display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
 }
 
+/* └ CONTEUDO ESQUERDO */
 .contato .contato-conteudo .conteudo-esquerdo {
       float: left;
       width: 60%;
-      border-right: 1px solid white;      
+      padding-right: 20px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo h1{
       font-size: 2.5em;
       font-weight: 600;
       font-family: raleway;
-      text-transform: uppercase;
+      text-transform: capitalize;
+      color: #FFF;
 }
 
+.contato .contato-conteudo .conteudo-esquerdo h1::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      /* background-color: #E68C8C; */
+      background-color:  rgb(248, 163, 163);
+      margin-top: 20px;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo p {
+      color: #FFF;
+      margin-top: 30px;
+      line-height: 20px;
+      font-size: 0.9em;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo form{
+      width: 100%;
+      margin-top: 30px;
+}
+.contato .contato-conteudo .conteudo-esquerdo input[type=text], input[type=tel], input[type=email], input[type=submit]{
+      background-color: rgba(255, 255, 255, 0.0);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      padding: 10px 15px;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: raleway;
+      font-size: 0.9em;
+      box-sizing: border-box;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .nome {
+      width: 48%;
+      margin-right: 3%;
+      margin-bottom: 15px;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .sobre-nome {
+      width: 48%;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .telefone {
+      width: 48%;
+      margin-right: 3%;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .email {
+      width: 48%;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo ::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.8em;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .textarea {
+      background-color: rgba(255, 255, 255, 0.0);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      padding: 10px 15px;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: raleway;
+      font-size: 0.9em;
+      box-sizing: border-box;
+      margin-top: 15px;
+      width: 100%;
+      resize: none;
+      overflow: hidden;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .submit {
+      margin-top: 15px;
+      font-size: 0.9em;
+      padding: 10px 25px;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .submit:hover {
+      border: 1px solid rgb(248, 163, 163);
+      background-color: rgb(248, 163, 163);
+      /* border: 1px solid #E68C8C; */
+      /* background: #E68C8C; */
+      /* background: linear-gradient(to bottom right, rgb(252, 186, 186), #D66D75); */
+      cursor: pointer;
+      transition-duration: 500ms;
+}
+
+/* └ CONTEUDO DIREITO */
 .contato .contato-conteudo .conteudo-direito {
       float: left;
       width: 40%;
+
 }
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 

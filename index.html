@@ -201,26 +201,39 @@
       <!-- inicio contato -->
       <section class="contato container-xy" id="contato">
             <div class="contato-conteudo container">
+                  <!-- inicio conteudo-esquerdo -->
                   <article class="conteudo-esquerdo container">
                         <h1>Fale Conosco</h1>
                         <p>
-                              Você pode nos contatar de qualquer maneira que seja conveniente para você. Estamos disponíveis 24/7 via fax ou email. Você
-                              também pode usar um formulário de contato rápido abaixo ou visitar nosso salão pessoalmente.
+                              Você pode nos contatar da forma que seja mais conveniente a você. Estamos disponíveis 24/7 via email e ou telefone. Você
+                              também pode usar este formulário de contato ou visitar nosso estabelecimento pessoalmente.
                         </p>
                         <form action="">
-
+                              <input class="nome" type="text" name="nome" id="nome" placeholder="Nome" required>
+                              <input class="sobre-nome" type="text" name="sobre-nome" id="sobre-nome" placeholder="Sobrenome" required>
+                              <input class="telefone" type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+                              <input class="email" type="email" name="email" id="email" placeholder="Email" required>
+                              <textarea class="textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                              <input class="submit" type="submit" value="Enviar Messagem">                     
                         </form>
                   </article>
+                  <!-- fim conteudo-esquerdo -->
+
+                  <!-- inicio conteudo-direito -->
                   <article class="conteudo-direito container">
+                        <div class="endereco">
+                              
+                        </div>
                         <h1>Fale Conosco</h1>
                         <p>
                               Você pode nos contatar de qualquer maneira que seja conveniente para você. Estamos disponíveis 24/7 via fax ou email. Você
-                              também pode usar um formulário de contato rápido abaixo ou visitar nosso salão pessoalmente.
+                              também pode usar este formulário de contato ou visitar nosso salão pessoalmente.
                         </p>
                         <form action="">
 
                         </form>
                   </article>
+                  <!-- fim conteudo-direito -->
             </div>
       </section>
       <!-- fim contato -->
@@ -257,6 +270,8 @@
       </div>
       <!-- fim copyright -->
 
+      <script src="js/jquery.js"></script>
+      <script src="js/scripts.js"></script>
 </body>
 
 </html>
