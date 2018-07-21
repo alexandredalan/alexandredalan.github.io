@@ -413,8 +413,7 @@ input:focus, textarea:focus {
       height: 50%;
       max-height: 50%;
       width: 100%;
-      max-width: 100%;
-      /* background-color: #63BCC2; */
+      max-width: 100%;      /* background-color: #63BCC2; */
       background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
@@ -453,7 +452,6 @@ input:focus, textarea:focus {
       max-height: 50%;
       width: 100%;
       max-width: 100%;
-      /* background-color: #63BCC2; */
       background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
@@ -526,7 +524,6 @@ input:focus, textarea:focus {
       max-height: 50%;
       width: 100%;
       max-width: 100%;
-      /* background-color: #63BCC2; */
       background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
@@ -621,7 +618,6 @@ input:focus, textarea:focus {
       display: block;
       width: 100px;
       height: 3px;
-      /* background-color: #E68C8C; */
       background-color: rgb(248, 163, 163);
       margin-top: 20px;
 }
@@ -630,7 +626,7 @@ input:focus, textarea:focus {
       color: #FFF;
       margin-top: 30px;
       line-height: 20px;
-      font-size: 0.9em;
+      font-size: 0.8em;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo form {
@@ -646,10 +642,10 @@ input:focus, textarea:focus {
       -moz-border-radius: 30px;
       -ms-border-radius: 30px;
       -o-border-radius: 30px;
-      padding: 10px 15px;
+      padding: 13px 20px;
       color: rgba(255, 255, 255, 0.7);
       font-family: raleway;
-      font-size: 0.9em;
+      font-size: 0.8em;
       box-sizing: border-box;
 }
 
@@ -674,7 +670,7 @@ input:focus, textarea:focus {
 
 .contato .contato-conteudo .conteudo-esquerdo ::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.5);
-      font-size: 0.8em;
+      font-size: 0.9em;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .textarea {
@@ -722,106 +718,98 @@ input:focus, textarea:focus {
 
 .contato .contato-conteudo .conteudo-direito .endereco {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 8%;
-      margin-bottom: 30px;
+      padding-bottom: 18px;
+      margin-bottom: 25px;
 }
 
 .contato .contato-conteudo .conteudo-direito .endereco .titulo {
       display: block;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 600;
       color: #FFF;
-      margin-bottom: 20px;
+      margin-bottom: 13px;
 }
 
 .contato .contato-conteudo .conteudo-direito .endereco .logradouro {
-      font-size: 1em;
+      font-size: 0.8em;
       background: url(../img/contato/maps-24x24.png) no-repeat center left;
       padding-left: 35px;
       line-height: 30px;
       color: #FFF;
-      margin-bottom: 8px;
-      
 }
 
 .contato .contato-conteudo .conteudo-direito .endereco .localidade {
       padding-left: 35px;
       color: #FFF;
+      font-size: 0.8em;
+      line-height: 30px;
 }
 
 .contato .contato-conteudo .conteudo-direito .telefone {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 8%;
-      margin-bottom: 30px;
+      padding-bottom: 18px;
+      margin-bottom: 25px;
 }
 
 .contato .contato-conteudo .conteudo-direito .telefone .titulo {
       display: block;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 600;
       color: #FFF;
-      margin-bottom: 20px;
+      margin-bottom: 13px;
 }
 
 .contato .contato-conteudo .conteudo-direito .telefone p {
-      font-size: 1em;
+      font-size: 0.8em;
       background: url(../img/contato/fone-24x24.png) no-repeat center left;
       padding-left: 35px;
       line-height: 30px;
       color: #FFF;
-      margin-bottom: 8px;
 }
 
 .contato .contato-conteudo .conteudo-direito .email {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 8%;
-      margin-bottom: 30px;
+      padding-bottom: 18px;
+      margin-bottom: 25px;
 }
 
 .contato .contato-conteudo .conteudo-direito .email .titulo {
       display: block;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 600;
       color: #FFF;
-      margin-bottom: 20px;
+      margin-bottom: 13px;
 }
 
 .contato .contato-conteudo .conteudo-direito .email p {
-      font-size: 1em;
+      font-size: 0.8em;
       background: url(../img/contato/email-24x24.png) no-repeat center left;
       padding-left: 35px;
       line-height: 30px;
       color: #FFF;
-      margin-bottom: 8px;
 }
 
 .contato .contato-conteudo .conteudo-direito .horario .titulo {
       display: block;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 600;
       color: #FFF;
-      margin-bottom: 20px;
+      margin-bottom: 13px;
 }
 
 .contato .contato-conteudo .conteudo-direito .horario p {
-      font-size: 1em;
+      font-size: 0.8em;
       padding-left: 35px;
       line-height: 30px;
       color: #FFF;
-      margin-bottom: 8px;
-}
-
-.contato .contato-conteudo .conteudo-direito .horario p:nth-last-child(1) {
-      margin-bottom: 0;
 }
 
 .contato .contato-conteudo .conteudo-direito .horario .icon-horario {
-      font-size: 1em;
+      font-size: 0.8em;
       background: url(../img/contato/clock-24x24.png) no-repeat center left;
       padding-left: 35px;
       line-height: 30px;
       color: #FFF;
-      margin-bottom: 8px;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
