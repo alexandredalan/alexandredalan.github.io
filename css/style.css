@@ -31,7 +31,7 @@ html, body {
       font-family: raleway;
 }
 
-input:focus, textarea:focus{
+input:focus, textarea:focus {
       outline: none;
 }
 
@@ -39,9 +39,11 @@ input:focus, textarea:focus{
       width: 100%;
       height: 100%;
 }
+
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* HEADER */
+
 .header {
       /* position: fixed;  */
       /* top: 0;  */
@@ -78,6 +80,7 @@ input:focus, textarea:focus{
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* INTRODUÇÃO */
+
 .header-introducao {
       /* margin-top: 97px;  */
       width: 100%;
@@ -89,7 +92,7 @@ input:focus, textarea:focus{
       /* background-attachment: fixed; */
 }
 
-.header-introducao .container{
+.header-introducao .container {
       width: 100%;
       height: 100%;
       min-height: 100%;
@@ -115,7 +118,7 @@ input:focus, textarea:focus{
       display: block;
 }
 
-.header-introducao .citacao p{
+.header-introducao .citacao p {
       max-width: 960px;
       font-size: 18px;
       font-weight: 100;
@@ -149,9 +152,11 @@ input:focus, textarea:focus{
 
 .botao-header-introducao {
       padding: 15px 35px;
-      background-color: #63BCC2;
-      border: 1px solid #63BCC2;
-      border-radius: 25px;      
+      /* background-color: #63BCC2;
+      border: 1px solid #63BCC2; */
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
+      border: 1px solid linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
+      border-radius: 25px;
       border-radius: 25px;
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
@@ -164,18 +169,19 @@ input:focus, textarea:focus{
 }
 
 .botao-header-introducao:hover {
-      background-color: rgba(0, 0, 0, 0.0);
+      background: rgba(0, 0, 0, 0.0);
       color: #63BCC2;
       border: 1px solid white;
       font-size: 0.9em;
       font-weight: bolder;
       font-family: raleway;
-      transition-duration: 500ms;
+      /* transition-duration: 200ms; */
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* BIOGRAFIA */
+
 .biografia {
       height: 100%;
       min-height: 100%;
@@ -250,14 +256,18 @@ input:focus, textarea:focus{
 }
 
 .biografia .conteudo .texto-biografia .biografia-button a:hover {
-      background-color: #63BCC2;
+      /* background-color: #63BCC2; */
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
+      border: 1px solid linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       color: white;
       cursor: pointer;
-      transition-duration: 500ms;
+      /* transition-duration: 200ms; */
 }
+
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* SERVIÇOS */
+
 #servicos {
       background-color: white;
       height: 100%;
@@ -271,6 +281,7 @@ input:focus, textarea:focus{
 }
 
 /* └ CORPORAL */
+
 .servicos .corporal {
       z-index: 10;
       width: 25%;
@@ -297,7 +308,7 @@ input:focus, textarea:focus{
       width: 100%;
       max-width: 100%;
       /* background-color: #63BCC2; */
-      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -343,6 +354,7 @@ input:focus, textarea:focus{
 }
 
 /* └ MAKEUP */
+
 .servicos .makeup {
       z-index: 9;
       width: 25%;
@@ -403,7 +415,7 @@ input:focus, textarea:focus{
       width: 100%;
       max-width: 100%;
       /* background-color: #63BCC2; */
-      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -415,6 +427,7 @@ input:focus, textarea:focus{
 }
 
 /* └ FACIAL */
+
 .servicos .facial {
       z-index: 8;
       width: 25%;
@@ -441,7 +454,7 @@ input:focus, textarea:focus{
       width: 100%;
       max-width: 100%;
       /* background-color: #63BCC2; */
-      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -487,6 +500,7 @@ input:focus, textarea:focus{
 }
 
 /* └ SOBRANCELHA */
+
 .servicos .sobrancelha {
       z-index: 7;
       width: 25%;
@@ -513,7 +527,7 @@ input:focus, textarea:focus{
       width: 100%;
       max-width: 100%;
       /* background-color: #63BCC2; */
-      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -561,6 +575,7 @@ input:focus, textarea:focus{
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* PRODUTOS */
+
 .produto {
       height: 100%;
       width: 100%;
@@ -570,8 +585,9 @@ input:focus, textarea:focus{
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* CONTATO */
+
 .contato {
-      background: linear-gradient(to top left, rgb(87, 135, 194),  rgb(122, 195, 152));
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
 }
 
 .contato .contato-conteudo {
@@ -585,13 +601,14 @@ input:focus, textarea:focus{
 }
 
 /* └ CONTEUDO ESQUERDO */
+
 .contato .contato-conteudo .conteudo-esquerdo {
       float: left;
       width: 60%;
       padding-right: 20px;
 }
 
-.contato .contato-conteudo .conteudo-esquerdo h1{
+.contato .contato-conteudo .conteudo-esquerdo h1 {
       font-size: 2.5em;
       font-weight: 600;
       font-family: raleway;
@@ -605,7 +622,7 @@ input:focus, textarea:focus{
       width: 100px;
       height: 3px;
       /* background-color: #E68C8C; */
-      background-color:  rgb(248, 163, 163);
+      background-color: rgb(248, 163, 163);
       margin-top: 20px;
 }
 
@@ -616,11 +633,12 @@ input:focus, textarea:focus{
       font-size: 0.9em;
 }
 
-.contato .contato-conteudo .conteudo-esquerdo form{
+.contato .contato-conteudo .conteudo-esquerdo form {
       width: 100%;
       margin-top: 30px;
 }
-.contato .contato-conteudo .conteudo-esquerdo input[type=text], input[type=tel], input[type=email], input[type=submit]{
+
+.contato .contato-conteudo .conteudo-esquerdo input[type=text], input[type=tel], input[type=email], input[type=submit] {
       background-color: rgba(255, 255, 255, 0.0);
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 30px;
@@ -695,14 +713,121 @@ input:focus, textarea:focus{
 }
 
 /* └ CONTEUDO DIREITO */
+
 .contato .contato-conteudo .conteudo-direito {
       float: left;
       width: 40%;
-
+      padding-left: 20px;
 }
+
+.contato .contato-conteudo .conteudo-direito .endereco {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 8%;
+      margin-bottom: 30px;
+}
+
+.contato .contato-conteudo .conteudo-direito .endereco .titulo {
+      display: block;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #FFF;
+      margin-bottom: 20px;
+}
+
+.contato .contato-conteudo .conteudo-direito .endereco .logradouro {
+      font-size: 1em;
+      background: url(../img/contato/maps-24x24.png) no-repeat center left;
+      padding-left: 35px;
+      line-height: 30px;
+      color: #FFF;
+      margin-bottom: 8px;
+      
+}
+
+.contato .contato-conteudo .conteudo-direito .endereco .localidade {
+      padding-left: 35px;
+      color: #FFF;
+}
+
+.contato .contato-conteudo .conteudo-direito .telefone {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 8%;
+      margin-bottom: 30px;
+}
+
+.contato .contato-conteudo .conteudo-direito .telefone .titulo {
+      display: block;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #FFF;
+      margin-bottom: 20px;
+}
+
+.contato .contato-conteudo .conteudo-direito .telefone p {
+      font-size: 1em;
+      background: url(../img/contato/fone-24x24.png) no-repeat center left;
+      padding-left: 35px;
+      line-height: 30px;
+      color: #FFF;
+      margin-bottom: 8px;
+}
+
+.contato .contato-conteudo .conteudo-direito .email {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 8%;
+      margin-bottom: 30px;
+}
+
+.contato .contato-conteudo .conteudo-direito .email .titulo {
+      display: block;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #FFF;
+      margin-bottom: 20px;
+}
+
+.contato .contato-conteudo .conteudo-direito .email p {
+      font-size: 1em;
+      background: url(../img/contato/email-24x24.png) no-repeat center left;
+      padding-left: 35px;
+      line-height: 30px;
+      color: #FFF;
+      margin-bottom: 8px;
+}
+
+.contato .contato-conteudo .conteudo-direito .horario .titulo {
+      display: block;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #FFF;
+      margin-bottom: 20px;
+}
+
+.contato .contato-conteudo .conteudo-direito .horario p {
+      font-size: 1em;
+      padding-left: 35px;
+      line-height: 30px;
+      color: #FFF;
+      margin-bottom: 8px;
+}
+
+.contato .contato-conteudo .conteudo-direito .horario p:nth-last-child(1) {
+      margin-bottom: 0;
+}
+
+.contato .contato-conteudo .conteudo-direito .horario .icon-horario {
+      font-size: 1em;
+      background: url(../img/contato/clock-24x24.png) no-repeat center left;
+      padding-left: 35px;
+      line-height: 30px;
+      color: #FFF;
+      margin-bottom: 8px;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* FOOTER */
+
 .footer {
       width: 100%;
       height: 340px;
@@ -712,6 +837,7 @@ input:focus, textarea:focus{
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* COPYRIGHT */
+
 .copyright {
       text-align: center;
       background-color: white;
