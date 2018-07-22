@@ -175,7 +175,6 @@ input:focus, textarea:focus {
       font-size: 0.9em;
       font-weight: bolder;
       font-family: raleway;
-      /* transition-duration: 200ms; */
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -256,12 +255,10 @@ input:focus, textarea:focus {
 }
 
 .biografia .conteudo .texto-biografia .biografia-button a:hover {
-      /* background-color: #63BCC2; */
       background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       border: 1px solid linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       color: white;
       cursor: pointer;
-      /* transition-duration: 200ms; */
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -307,7 +304,6 @@ input:focus, textarea:focus {
       max-height: 50%;
       width: 100%;
       max-width: 100%;
-      /* background-color: #63BCC2; */
       background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
@@ -337,7 +333,11 @@ input:focus, textarea:focus {
       max-height: 100%;
       background-color: rgba(243, 142, 142, 0.7);
       margin-left: -101%;
-      transition: .7s;
+      transition: 1s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
       overflow: hidden;
       display: flex;
       display: -webkit-flex;
@@ -383,7 +383,11 @@ input:focus, textarea:focus {
       max-height: 100%;
       background-color: rgba(243, 142, 142, 0.7);
       margin-left: -101%;
-      transition: .7s;
+      transition: 1s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
       overflow: hidden;
       display: flex;
       display: -webkit-flex;
@@ -413,7 +417,7 @@ input:focus, textarea:focus {
       height: 50%;
       max-height: 50%;
       width: 100%;
-      max-width: 100%;      /* background-color: #63BCC2; */
+      max-width: 100%;
       background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       display: flex;
       display: -webkit-flex;
@@ -481,7 +485,11 @@ input:focus, textarea:focus {
       max-height: 100%;
       background-color: rgba(243, 142, 142, 0.7);
       margin-left: -101%;
-      transition: .7s;
+      transition: 1s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
       overflow: hidden;
       display: flex;
       display: -webkit-flex;
@@ -553,7 +561,11 @@ input:focus, textarea:focus {
       max-height: 100%;
       background-color: rgba(243, 142, 142, 0.7);
       margin-left: -101%;
-      transition: .7s;
+      transition: 1s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
       overflow: hidden;
       display: flex;
       display: -webkit-flex;
@@ -681,7 +693,7 @@ input:focus, textarea:focus {
       -moz-border-radius: 30px;
       -ms-border-radius: 30px;
       -o-border-radius: 30px;
-      padding: 10px 15px;
+      padding: 15px 20px;
       color: rgba(255, 255, 255, 0.7);
       font-family: raleway;
       font-size: 0.9em;
@@ -689,8 +701,29 @@ input:focus, textarea:focus {
       margin-top: 15px;
       width: 100%;
       resize: none;
-      overflow: hidden;
 }
+
+/* └ SCROLLBAR */
+::-webkit-scrollbar {
+      width: 7px;
+  }  
+  /* Track */
+::-webkit-scrollbar-track {
+      border-radius: 10px;
+  }   
+  /* Button */
+  ::-webkit-scrollbar-button {
+        height: 25px;
+}
+  /* Handle */
+ ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.2); 
+      border-radius: 10px;
+  }  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+      background: rgb(248, 164, 164);
+  }
 
 .contato .contato-conteudo .conteudo-esquerdo .submit {
       margin-top: 15px;
@@ -700,15 +733,9 @@ input:focus, textarea:focus {
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .submit:hover {
-      background: linear-gradient(to top left, #D66D75, #E29587);
+      background: linear-gradient(to bottom right, rgb(229, 130, 138), #E29587);
       border: 1px solid  #E29587;
-      /* border: 1px solid rgb(248, 163, 163);
-      background-color: rgb(248, 163, 163); */
-      /* border: 1px solid #E68C8C; */
-      /* background: #E68C8C; */
-      /* background: linear-gradient(to bottom right, rgb(252, 186, 186), #D66D75); */
       cursor: pointer;
-      /* transition-duration: 500ms; */
 }
 
 /* └ CONTEUDO DIREITO */
