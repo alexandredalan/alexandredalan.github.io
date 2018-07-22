@@ -606,7 +606,7 @@ input:focus, textarea:focus {
 }
 
 .contato .contato-conteudo .conteudo-esquerdo h1 {
-      font-size: 2.5em;
+      font-size: 2.2em;
       font-weight: 600;
       font-family: raleway;
       text-transform: capitalize;
@@ -619,12 +619,12 @@ input:focus, textarea:focus {
       width: 100px;
       height: 3px;
       background-color: rgb(248, 163, 163);
-      margin-top: 20px;
+      margin-top: 10px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo p {
       color: #FFF;
-      margin-top: 30px;
+      margin-top: 20px;
       line-height: 20px;
       font-size: 0.8em;
 }
@@ -696,16 +696,19 @@ input:focus, textarea:focus {
       margin-top: 15px;
       font-size: 0.9em;
       padding: 10px 25px;
+      color: #FBFBFB;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .submit:hover {
-      border: 1px solid rgb(248, 163, 163);
-      background-color: rgb(248, 163, 163);
+      background: linear-gradient(to top left, #D66D75, #E29587);
+      border: 1px solid  #E29587;
+      /* border: 1px solid rgb(248, 163, 163);
+      background-color: rgb(248, 163, 163); */
       /* border: 1px solid #E68C8C; */
       /* background: #E68C8C; */
       /* background: linear-gradient(to bottom right, rgb(252, 186, 186), #D66D75); */
       cursor: pointer;
-      transition-duration: 500ms;
+      /* transition-duration: 500ms; */
 }
 
 /* └ CONTEUDO DIREITO */
@@ -719,12 +722,12 @@ input:focus, textarea:focus {
 .contato .contato-conteudo .conteudo-direito .endereco {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       padding-bottom: 18px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
 }
 
 .contato .contato-conteudo .conteudo-direito .endereco .titulo {
       display: block;
-      font-size: 1.3em;
+      font-size: 1.2em;
       font-weight: 600;
       color: #FFF;
       margin-bottom: 13px;
@@ -734,7 +737,7 @@ input:focus, textarea:focus {
       font-size: 0.8em;
       background: url(../img/contato/maps-24x24.png) no-repeat center left;
       padding-left: 35px;
-      line-height: 30px;
+      line-height: 25px;
       color: #FFF;
 }
 
@@ -742,7 +745,7 @@ input:focus, textarea:focus {
       padding-left: 35px;
       color: #FFF;
       font-size: 0.8em;
-      line-height: 30px;
+      line-height: 25px;
 }
 
 .contato .contato-conteudo .conteudo-direito .telefone {
@@ -753,7 +756,7 @@ input:focus, textarea:focus {
 
 .contato .contato-conteudo .conteudo-direito .telefone .titulo {
       display: block;
-      font-size: 1.3em;
+      font-size: 1.2em;
       font-weight: 600;
       color: #FFF;
       margin-bottom: 13px;
@@ -763,7 +766,7 @@ input:focus, textarea:focus {
       font-size: 0.8em;
       background: url(../img/contato/fone-24x24.png) no-repeat center left;
       padding-left: 35px;
-      line-height: 30px;
+      line-height: 25px;
       color: #FFF;
 }
 
@@ -775,7 +778,7 @@ input:focus, textarea:focus {
 
 .contato .contato-conteudo .conteudo-direito .email .titulo {
       display: block;
-      font-size: 1.3em;
+      font-size: 1.2em;
       font-weight: 600;
       color: #FFF;
       margin-bottom: 13px;
@@ -785,13 +788,13 @@ input:focus, textarea:focus {
       font-size: 0.8em;
       background: url(../img/contato/email-24x24.png) no-repeat center left;
       padding-left: 35px;
-      line-height: 30px;
+      line-height: 25px;
       color: #FFF;
 }
 
 .contato .contato-conteudo .conteudo-direito .horario .titulo {
       display: block;
-      font-size: 1.3em;
+      font-size: 1.2em;
       font-weight: 600;
       color: #FFF;
       margin-bottom: 13px;
@@ -800,7 +803,7 @@ input:focus, textarea:focus {
 .contato .contato-conteudo .conteudo-direito .horario p {
       font-size: 0.8em;
       padding-left: 35px;
-      line-height: 30px;
+      line-height: 25px;
       color: #FFF;
 }
 
@@ -808,7 +811,7 @@ input:focus, textarea:focus {
       font-size: 0.8em;
       background: url(../img/contato/clock-24x24.png) no-repeat center left;
       padding-left: 35px;
-      line-height: 30px;
+      line-height: 25px;
       color: #FFF;
 }
 
