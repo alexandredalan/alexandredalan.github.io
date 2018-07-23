@@ -844,7 +844,6 @@ input:focus, textarea:focus {
       background-image: url('../img/testimonial/background-3.jpg');
       background-size: cover;
       background-position: center;
-      /* background-attachment: fixed; */
 }
 
 .testimonial .testimonial-conteudo {
@@ -865,7 +864,7 @@ input:focus, textarea:focus {
 }
 
 .testimonial .testimonial-conteudo .conteudo-header h1 {
-      font-size: 1.5em;
+      font-size: 2em;
       font-weight: 600;
       text-transform: unset;
       text-align: center;
@@ -873,12 +872,16 @@ input:focus, textarea:focus {
 }
 
 .testimonial .testimonial-conteudo .conteudo-header p {
-      font-size: 0.9em;
+      font-size: 1em;
       text-align: center;
-      font-size: 0.8em;
       color: #5b596b;
-      margin-bottom: 120px;
+      margin-bottom: 60px;
       line-height: 18px;
+}
+
+.testimonial .testimonial-conteudo .icon-testimonial {
+      width: 64px;
+      margin-bottom: 60px;
 }
 
 .testimonial .testimonial-conteudo .box-clientes {
@@ -900,14 +903,17 @@ input:focus, textarea:focus {
 }
 
 .testimonial .testimonial-conteudo .box-clientes .cliente:hover {
-      border-radius: 15px;
+      border-top-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      /* border-radius: 15px;
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
       -ms-border-radius: 15px;
-      -o-border-radius: 15px;
+      -o-border-radius: 15px; */
       -webkit-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.3);
       -moz-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.3);
       box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.3);
+      transition-duration: .5s;
 }
 
 .testimonial .testimonial-conteudo .box-clientes .cliente .avatar-cliente {
