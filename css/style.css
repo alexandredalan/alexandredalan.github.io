@@ -87,7 +87,7 @@ input:focus, textarea:focus {
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: .1em;
-      font-size: 0.8em;
+      font-size: 0.9em;
       padding: 10px 0;
 }
 
@@ -661,7 +661,7 @@ input:focus, textarea:focus {
 
 .contato .contato-conteudo .conteudo-esquerdo form {
       width: 100%;
-      margin-top: 30px;
+      margin-top: 60px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo input[type=text], input[type=tel], input[type=email], input[type=submit] {
@@ -877,13 +877,13 @@ input:focus, textarea:focus {
       font-size: 1em;
       text-align: center;
       color: #5b596b;
-      margin-bottom: 60px;
       line-height: 18px;
+      margin-bottom: 40px;
 }
 
 .testimonial .testimonial-conteudo .icon-testimonial {
-      width: 64px;
-      margin-bottom: 60px;
+      width: 56px;
+      margin-bottom: 40px;
 }
 
 .testimonial .testimonial-conteudo .box-clientes {
@@ -955,6 +955,7 @@ input:focus, textarea:focus {
 .testimonial .testimonial-conteudo .box-clientes .cliente .citacao-cliente {
       font-size: 0.7em;
       color: #73727c;
+      line-height: 15px;
 }
 
 .testimonial .testimonial-conteudo .box-clientes .cliente .cinco-estrelas {
@@ -968,8 +969,8 @@ input:focus, textarea:focus {
 
 .footer {
       width: 100%;
-      height: 230px;
-      max-height: 230px;
+      height: 250px;
+      max-height: 280px;
       background: url(../img/footer/bg-footer.jpg) no-repeat;
       background-size: cover;
       background-position: center;
