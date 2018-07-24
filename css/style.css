@@ -611,212 +611,6 @@ input:focus, textarea:focus {
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* CONTATO */
-
-.contato {
-      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
-}
-
-.contato .contato-conteudo {
-      height: 100%;
-      display: flex;
-      display: -webkit-flex;
-      align-items: center;
-      -webkit-align-items: center;
-      justify-content: center;
-      -webkit-justify-content: center;
-}
-
-/* └ CONTEUDO ESQUERDO */
-
-.contato .contato-conteudo .conteudo-esquerdo {
-      float: left;
-      width: 60%;
-      padding-right: 20px;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo h1 {
-      font-size: 2.2em;
-      font-weight: 600;
-      font-family: raleway;
-      text-transform: capitalize;
-      color: #FFF;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo h1::after {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 3px;
-      background-color: rgb(248, 163, 163);
-      margin-top: 10px;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo p {
-      color: #FFF;
-      margin-top: 20px;
-      line-height: 20px;
-      font-size: 0.8em;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo form {
-      width: 100%;
-      margin-top: 60px;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo input[type=text], input[type=tel], input[type=email], input[type=submit] {
-      background-color: rgba(255, 255, 255, 0.0);
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      border-radius: 30px;
-      -webkit-border-radius: 30px;
-      -moz-border-radius: 30px;
-      -ms-border-radius: 30px;
-      -o-border-radius: 30px;
-      padding: 13px 20px;
-      color: rgba(255, 255, 255, 0.7);
-      font-family: raleway;
-      font-size: 0.8em;
-      box-sizing: border-box;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo .nome {
-      width: 48%;
-      margin-right: 3%;
-      margin-bottom: 15px;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo .sobre-nome {
-      width: 48%;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo .telefone {
-      width: 48%;
-      margin-right: 3%;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo .email {
-      width: 48%;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo ::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 0.9em;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo .textarea {
-      background-color: rgba(255, 255, 255, 0.0);
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      border-radius: 30px;
-      -webkit-border-radius: 30px;
-      -moz-border-radius: 30px;
-      -ms-border-radius: 30px;
-      -o-border-radius: 30px;
-      padding: 15px 20px;
-      color: rgba(255, 255, 255, 0.7);
-      font-family: raleway;
-      font-size: 0.9em;
-      box-sizing: border-box;
-      margin-top: 15px;
-      width: 100%;
-      resize: none;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo .submit {
-      margin-top: 15px;
-      font-size: 0.9em;
-      padding: 10px 25px;
-      color: #FBFBFB;
-}
-
-.contato .contato-conteudo .conteudo-esquerdo .submit:hover {
-      background: linear-gradient(to bottom right, rgb(229, 130, 138), #E29587);
-      border: 1px solid #E29587;
-      cursor: pointer;
-}
-
-/* └ CONTEUDO DIREITO */
-
-.contato .contato-conteudo .conteudo-direito {
-      float: left;
-      width: 40%;
-      padding-left: 20px;
-}
-
-.contato .contato-conteudo .conteudo-direito .endereco {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 18px;
-      margin-bottom: 20px;
-}
-
-.contato .contato-conteudo .conteudo-direito .endereco .titulo {
-      display: block;
-      font-size: 1.2em;
-      font-weight: 600;
-      color: #FFF;
-      margin-bottom: 13px;
-}
-
-.contato .contato-conteudo .conteudo-direito .endereco p {
-      font-size: 0.9em;
-      background: url(../img/contato/maps-24x24.png) no-repeat center left;
-      padding-left: 35px;
-      line-height: 25px;
-      color: #FFF;
-      font-family: "Open Sans";
-}
-
-.contato .contato-conteudo .conteudo-direito .endereco p:nth-last-of-type(1) {
-      background: none;
-}
-
-.contato .contato-conteudo .conteudo-direito .telefone {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 18px;
-      margin-bottom: 25px;
-}
-
-.contato .contato-conteudo .conteudo-direito .telefone .titulo {
-      display: block;
-      font-size: 1.2em;
-      font-weight: 600;
-      color: #FFF;
-      margin-bottom: 13px;
-}
-
-.contato .contato-conteudo .conteudo-direito .telefone p {
-      font-size: 0.9em;
-      background: url(../img/contato/fone-24x24.png) no-repeat center left;
-      padding-left: 35px;
-      line-height: 25px;
-      color: #FFF;
-      font-family: "Open Sans";
-}
-
-.contato .contato-conteudo .conteudo-direito .horario .titulo {
-      display: block;
-      font-size: 1.2em;
-      font-weight: 600;
-      color: #FFF;
-      margin-bottom: 13px;
-}
-
-.contato .contato-conteudo .conteudo-direito .horario p {
-      font-size: 0.9em;
-      padding-left: 35px;
-      line-height: 25px;
-      color: #FFF;
-      font-family: "Open Sans";
-}
-
-.contato .contato-conteudo .conteudo-direito .horario p:nth-last-of-type(3) {
-      background: url(../img/contato/clock-24x24.png) no-repeat center left;
-      padding-left: 35px;
-      line-height: 25px;
-      color: #FFF;
-}
-
-/* --------------------------------------------------------------------------------------------------------------------------------------*/
-
 /* TESTIMONIAL */
 
 .testimonial {
@@ -940,7 +734,213 @@ input:focus, textarea:focus {
       margin-top: 30px;
 }
 
-/* --------------------------------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* CONTATO */
+
+.contato {
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
+}
+
+.contato .contato-conteudo {
+      height: 100%;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+}
+
+/* └ CONTEUDO ESQUERDO */
+
+.contato .contato-conteudo .conteudo-esquerdo {
+      float: left;
+      width: 60%;
+      padding-right: 20px;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo h1 {
+      font-size: 2.2em;
+      font-weight: 600;
+      font-family: raleway;
+      text-transform: capitalize;
+      color: #FFF;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo h1::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      background-color: rgb(248, 163, 163);
+      margin-top: 10px;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo p {
+      color: #FFF;
+      margin-top: 20px;
+      line-height: 20px;
+      font-size: 0.8em;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo form {
+      width: 100%;
+      margin-top: 60px;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo input[type=text], input[type=tel], input[type=email], input[type=submit] {
+      background-color: rgba(255, 255, 255, 0.0);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      padding: 13px 20px;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: raleway;
+      font-size: 0.8em;
+      box-sizing: border-box;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .nome {
+      width: 48%;
+      margin-right: 3%;
+      margin-bottom: 15px;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .sobre-nome {
+      width: 48%;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .telefone {
+      width: 48%;
+      margin-right: 3%;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .email {
+      width: 48%;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo ::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.9em;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .textarea {
+      background-color: rgba(255, 255, 255, 0.0);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      padding: 15px 20px;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: raleway;
+      font-size: 0.9em;
+      box-sizing: border-box;
+      margin-top: 15px;
+      width: 100%;
+      resize: none;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .submit {
+      margin-top: 25px;
+      font-size: 0.9em;
+      padding: 10px 25px;
+      color: #FBFBFB;
+}
+
+.contato .contato-conteudo .conteudo-esquerdo .submit:hover {
+      background: linear-gradient(to bottom right, rgb(229, 130, 138), #E29587);
+      border: 1px solid #E29587;
+      cursor: pointer;
+}
+
+/* └ CONTEUDO DIREITO */
+
+.contato .contato-conteudo .conteudo-direito {
+      float: left;
+      width: 40%;
+      padding-left: 20px;
+}
+
+.contato .contato-conteudo .conteudo-direito .endereco {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+}
+
+.contato .contato-conteudo .conteudo-direito .endereco .titulo {
+      display: block;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #FFF;
+      margin-bottom: 13px;
+}
+
+.contato .contato-conteudo .conteudo-direito .endereco p {
+      font-size: 0.9em;
+      background: url(../img/contato/maps-24x24.png) no-repeat center left;
+      padding-left: 35px;
+      line-height: 25px;
+      color: #FFF;
+      font-family: "Open Sans";
+}
+
+.contato .contato-conteudo .conteudo-direito .endereco p:nth-last-of-type(1) {
+      background: none;
+}
+
+.contato .contato-conteudo .conteudo-direito .telefone {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 18px;
+      margin-bottom: 25px;
+}
+
+.contato .contato-conteudo .conteudo-direito .telefone .titulo {
+      display: block;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #FFF;
+      margin-bottom: 13px;
+}
+
+.contato .contato-conteudo .conteudo-direito .telefone p {
+      font-size: 0.9em;
+      background: url(../img/contato/fone-24x24.png) no-repeat center left;
+      padding-left: 35px;
+      line-height: 25px;
+      color: #FFF;
+      font-family: "Open Sans";
+}
+
+.contato .contato-conteudo .conteudo-direito .horario .titulo {
+      display: block;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #FFF;
+      margin-bottom: 13px;
+}
+
+.contato .contato-conteudo .conteudo-direito .horario p {
+      font-size: 0.9em;
+      padding-left: 35px;
+      line-height: 25px;
+      color: #FFF;
+      font-family: "Open Sans";
+}
+
+.contato .contato-conteudo .conteudo-direito .horario p:nth-last-of-type(3) {
+      background: url(../img/contato/clock-24x24.png) no-repeat center left;
+      padding-left: 35px;
+      line-height: 25px;
+      color: #FFF;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* FOOTER */
 
@@ -950,7 +950,7 @@ input:focus, textarea:focus {
       max-height: 280px;
       background: url(../img/footer/bg-footer.jpg) no-repeat;
       background-size: cover;
-      /* background-position: left; */
+      background-position: top;
 }
 
 .footer .conteudo {
@@ -960,8 +960,8 @@ input:focus, textarea:focus {
       -webkit-align-items: center;
       align-content: center;
       -webkit-align-content: center;
-      justify-content: left;
-      -webkit-justify-content: left;
+      justify-content: center;
+      -webkit-justify-content: center;
       text-align: center;
       height: 100%;
 }
@@ -975,69 +975,77 @@ input:focus, textarea:focus {
       -webkit-align-content: stretch;
       text-align: center;
       width: 100%;
+      justify-content: center;
+      -webkit-justify-content: center;
 }
 
 .footer .conteudo .box {
       width: 21%;
+      filter: none;
+      -webkit-filter: none;
 }
 
 .footer .conteudo .box-1 {
       border-right: 1px solid #ccc;
-      /* height: 250px; */
+      height: 220px;
+      max-height: 220px;
 }
 
 .footer .conteudo .box-1 h3 {
-      line-height: 17px;
-      margin-top: 5px;
-      color: #3e3e3e;
-      font-weight: 600;
-}
-
-.footer .conteudo .box-1 span {
-      display: block;
-      color: #3e3e3e;
-      margin-bottom: 30px;
-}
-
-.footer .conteudo .box-1 .icon-social {
-      width: 22px;
-      margin-top: 5px;
-      margin-right: 5px;
-}
-
-.footer .conteudo .box-2 {
-      border-right: 1px solid #ccc;
-}
-
-.footer .conteudo .box-2 h3 {
       font-size: 1.2em;
       font-weight: 600;
       color: #3e3e3e;
       margin-bottom: 15px;
 }
 
-.footer .conteudo .box-2 .menu-footer {
+.footer .conteudo .box-1 .menu-footer {
       display: inline-block;
       text-align: left;
 }
 
-.footer .conteudo .box-2 ul li {
+.footer .conteudo .box-1 ul li {
       margin-bottom: 10px;
       font-size: 0.9em;
 }
 
-.footer .conteudo .box-2 ul li a {
+.footer .conteudo .box-1 ul li a {
       color: #3e3e3e;
       text-transform: capitalize;
 }
 
-.footer .conteudo .box-2 ul li a:hover {
+.footer .conteudo .box-1 ul li a:hover {
       color: #000;
+}
+
+.footer .conteudo .box-2 {
+      border-right: 1px solid #ccc;
+      height: 220px;
+      max-height: 220px;
+      margin-right: 50px;
+}
+
+.footer .conteudo .box-2 h3 {
+      line-height: 17px;
+      margin-top: 5px;
+      color: #3e3e3e;
+      font-weight: 600;
+}
+
+.footer .conteudo .box-2 span {
+      display: block;
+      color: #3e3e3e;
+      margin-bottom: 30px;
+}
+
+.footer .conteudo .box-2 .icon-social {
+      width: 22px;
+      margin-top: 5px;
+      margin-right: 5px;
 }
 
 .footer .conteudo .box-3 {
       text-align: left;
-      margin-left: 50px;
+      /* margin-left: 50px; */
 }
 
 .footer .conteudo .box-3 h3 {
@@ -1082,7 +1090,7 @@ input:focus, textarea:focus {
 
 .copyright {
       text-align: center;
-      background-color: white;
+      background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       width: 100%;
       height: 45px;
       display: flex;
@@ -1095,23 +1103,21 @@ input:focus, textarea:focus {
 .copyright h3 {
       display: block;
       font-family: "Open Sans";
-      font-size: 12px;
+      font-size: 0.8em;
       font-weight: 500;
-      color: #6e6e6e;
+      color: white;
       margin: 3px 0 3px 0;
 }
 
 .copyright .hadasoftware-link {
       display: block;
       font-family: "Open Sans";
-      font-size: 12px;
+      font-size: 0.8em;
       font-weight: 500;
-      color: #6e6e6e;
-      background: url(../img/copyright/web.png) no-repeat center left;
-      padding-left: 25px;
+      color: white;
       line-height: 15px;
 }
 
 .copyright .hadasoftware-link:hover, .hadasoftware-link:visited, .hadasoftware-link:active {
-      color: #313131;
+      font-weight: 600;
 }
