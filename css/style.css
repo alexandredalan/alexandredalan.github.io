@@ -946,11 +946,11 @@ input:focus, textarea:focus {
 
 .footer {
       width: 100%;
-      height: 250px;
+      height: 280px;
       max-height: 280px;
       background: url(../img/footer/bg-footer.jpg) no-repeat;
       background-size: cover;
-      background-position: center;
+      /* background-position: left; */
 }
 
 .footer .conteudo {
@@ -1063,8 +1063,9 @@ input:focus, textarea:focus {
 }
 
 .footer .conteudo .box-3 p:nth-last-of-type(3) {
-      margin-bottom: 0;
-      border: 1px solid red;
+      margin-bottom: 3;
+      line-height: 15px;
+      font-size: 0.8em;
 }
 
 .footer .conteudo .box-3 .endereco {
@@ -1072,10 +1073,6 @@ input:focus, textarea:focus {
 }
 
 .footer .conteudo .box-3 .telefone {
-      margin-bottom: 15px;
-}
-
-.footer .conteudo .box-3 .horario {
       margin-bottom: 15px;
 }
 
