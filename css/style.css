@@ -98,6 +98,7 @@ input:focus, textarea:focus {
 
 .header-menu li a:hover {
       color: #E68C8C;
+      transition-duration: .2s;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -139,7 +140,6 @@ input:focus, textarea:focus {
 .header-introducao h1 span {
       font-size: 48px;
       display: block;
-      /* color: #E68C8C; */
 }
 
 .header-introducao .citacao p {
