@@ -969,26 +969,22 @@ input:focus, textarea:focus {
 .footer .conteudo .conteudo-box {
       display: flex;
       display: -webkit-flex;
-      align-items: flex-start;
-      -webkit-align-items: flex-start;
+      align-items: flex-stretch;
+      -webkit-align-items: flex-stretch;
       align-content: stretch;
       -webkit-align-content: stretch;
       text-align: center;
       width: 100%;
-      justify-content: center;
-      -webkit-justify-content: center;
+      justify-content: flex-start;
+      -webkit-justify-content: flex-start;
 }
 
 .footer .conteudo .box {
-      width: 21%;
-      filter: none;
-      -webkit-filter: none;
+      width: 25%; 
 }
 
 .footer .conteudo .box-1 {
       border-right: 1px solid #ccc;
-      height: 220px;
-      max-height: 220px;
 }
 
 .footer .conteudo .box-1 h3 {
@@ -1019,13 +1015,9 @@ input:focus, textarea:focus {
 
 .footer .conteudo .box-2 {
       border-right: 1px solid #ccc;
-      height: 220px;
-      max-height: 220px;
-      margin-right: 50px;
 }
 
 .footer .conteudo .box-2 h3 {
-      line-height: 17px;
       margin-top: 5px;
       color: #3e3e3e;
       font-weight: 600;
@@ -1034,18 +1026,17 @@ input:focus, textarea:focus {
 .footer .conteudo .box-2 span {
       display: block;
       color: #3e3e3e;
-      margin-bottom: 30px;
 }
 
 .footer .conteudo .box-2 .icon-social {
-      width: 22px;
-      margin-top: 5px;
-      margin-right: 5px;
+      margin-top: 35px;
+      margin-right: 8px;
 }
 
 .footer .conteudo .box-3 {
       text-align: left;
-      /* margin-left: 50px; */
+      padding-left: 50px;
+      width: 26%;
 }
 
 .footer .conteudo .box-3 h3 {
@@ -1053,7 +1044,6 @@ input:focus, textarea:focus {
       font-weight: 600;
       color: #3e3e3e;
       margin-bottom: 15px;
-      ;
 }
 
 .footer .conteudo .box-3 span {
