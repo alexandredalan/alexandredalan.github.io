@@ -8,7 +8,11 @@ html {
 body {
       font-family: "Work Sans";
       height: 800px;
+<<<<<<< HEAD
       background-color: #FFF;
+=======
+      background-color: #FFF; 
+>>>>>>> 6cfa408b6b2d52d62654c13c02fde5f4c3e6fd6d
 }
 
 p {
@@ -98,6 +102,7 @@ input:focus, textarea:focus {
 
 .header-menu li a:hover {
       color: #E68C8C;
+      transition-duration: .2s;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -139,7 +144,6 @@ input:focus, textarea:focus {
 .header-introducao h1 span {
       font-size: 48px;
       display: block;
-      /* color: #E68C8C; */
 }
 
 .header-introducao .citacao p {
