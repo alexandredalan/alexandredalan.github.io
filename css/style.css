@@ -8,19 +8,13 @@ html {
 body {
       font-family: "Work Sans";
       height: 800px;
-      background-color: #FFF; 
+      background-color: #FFF;
+      max-width: 1600px;
+      margin: 0 auto;
 }
 
 p {
       font-family: raleway;
-}
-
-.btn {
-      background-color: #63BCC2;
-      border-radius: 3px;
-      font-weight: normal;
-      color: #FBFBFB;
-      font-size: 1.2em;
 }
 
 .clear {
@@ -69,34 +63,47 @@ input:focus, textarea:focus {
 /* HEADER */
 
 .header {
-      /* position: fixed;  */
-      /* top: 0;  */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
       width: 100%;
+      max-width: 100%;      
+      max-height: 100%;
       background-color: #FFF;
-      padding: 10px 0;
-      /* z-index: 99;  */
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.header-menu {
-      text-align: right;
+.header .menu {
+      width: 960px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border: 1px solid red;
 }
 
-.header-menu li {
-      display: inline-block;
-      margin: 30px 0px 0px 25px;
+.header .menu .logotipo img {
+      width: 48px;
+      padding: 8px 0;
 }
 
-.header-menu li a {
+.header .menu .menu-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.header .menu .menu-nav ul li a {
       color: #17171b;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: .1em;
-      font-size: 0.8em;
+      font-size: 0.9em;
+      display: block;
       padding: 10px 0;
+      margin-left: 30px;
 }
 
-.header-menu li a:hover {
+.header .menu .menu-nav ul li a:hover {
       color: #E68C8C;
       transition-duration: .2s;
 }
@@ -111,25 +118,23 @@ input:focus, textarea:focus {
       background: url("../img/cabecalho/bg-image-header-2.jpg") no-repeat;
       background-position: center;
       background-size: cover;
-      /* background-attachment: fixed; */
-      text-align: center;
+      display: flex;
+      align-items: center;
 }
 
-.header-introducao .container {
-      width: 100%;
-      height: 100%;
-      min-height: 100%;
+.header-introducao .introducao-conteudo {
       display: flex;
       display: -webkit-flex;
-      align-items: center;
-      -webkit-align-items: center;
-      justify-content: center;
-      -webkit-justify-content: center;
       flex-direction: column;
       -webkit-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      border: 1px solid red;
 }
 
-.header-introducao h1 {
+.header-introducao .introducao-conteudo h1 {
       font-size: 64px;
       font-weight: bold;
       text-transform: uppercase;
@@ -137,45 +142,42 @@ input:focus, textarea:focus {
       text-align: center;
 }
 
-.header-introducao h1 span {
+.header-introducao .introducao-conteudo h1 span {
       font-size: 48px;
       display: block;
 }
 
-.header-introducao .citacao p {
+.header-introducao .introducao-conteudo .citacao p {
       max-width: 960px;
       font-size: 18px;
       font-weight: 100;
       color: white;
       text-align: center;
-      margin: 88px auto;
       line-height: 30px;
 }
 
-.citacao p::before {
+.header-introducao .introducao-conteudo .citacao p::before {
       content: "";
       display: block;
       width: 100px;
       height: 3px;
       background-color: #FFF;
-      margin: 0 auto 25px auto;
+      margin: 20px auto;
 }
 
-.citacao p::after {
+.header-introducao .introducao-conteudo .citacao p::after {
       content: "";
       display: block;
       width: 100px;
       height: 3px;
       background-color: #FFF;
-      margin: 25px auto 0 auto;
+      margin: 20px auto;
 }
 
-.botao {
-      margin-top: 15px;
-}
-
-.botao-header-introducao {
-      padding: 15px 35px;
+.header-introducao .introducao-conteudo .botao {
+      height: 45px;
+      width: 230px;
+      font-size: 0.9em;
       background: linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       border: 1px solid linear-gradient(to top left, rgb(87, 135, 194), rgb(122, 195, 152));
       border-radius: 25px;
@@ -184,19 +186,31 @@ input:focus, textarea:focus {
       -moz-border-radius: 25px;
       -ms-border-radius: 25px;
       -o-border-radius: 25px;
-      text-transform: uppercase;
-      font-size: 0.9em;
-      font-weight: 600;
-      font-family: raleway;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
 
-.botao-header-introducao:hover {
+.header-introducao .introducao-conteudo .botao:hover {
       background: rgba(0, 0, 0, 0.0);
       color: #63BCC2;
       border: 1px solid white;
       font-size: 0.9em;
       font-weight: bolder;
       font-family: raleway;
+}
+
+.header-introducao .introducao-conteudo .botao-header-introducao {
+      padding: 15px 40px;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: 600;
+      font-family: raleway;
+      color: white;
+}
+
+.header-introducao .introducao-conteudo .botao-header-introducao:hover {
+      
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -824,7 +838,7 @@ input:focus, textarea:focus {
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .email {
-      width :60%;
+      width: 60%;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo ::-webkit-input-placeholder {
