@@ -794,7 +794,7 @@ input:focus, textarea:focus {
       -moz-border-radius: 30px;
       -ms-border-radius: 30px;
       -o-border-radius: 30px;
-      padding: 13px 20px;
+      padding: 13px 40px;
       color: rgba(255, 255, 255, 0.7);
       font-family: "Open Sans";
       font-size: 0.8em;
@@ -834,7 +834,6 @@ input:focus, textarea:focus {
 .contato .contato-conteudo .conteudo-esquerdo ::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.4);
       font-size: 1em;
-      padding-left: 20px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .textarea {
@@ -845,7 +844,7 @@ input:focus, textarea:focus {
       -moz-border-radius: 30px;
       -ms-border-radius: 30px;
       -o-border-radius: 30px;
-      padding: 15px 20px;
+      padding: 15px 40px;
       color: rgba(255, 255, 255, 0.7);
       font-family: raleway;
       font-size: 0.9em;
@@ -853,6 +852,9 @@ input:focus, textarea:focus {
       margin-top: 15px;
       width: 100%;
       resize: none;
+      background: url("../img/contato/textarea-input.png") no-repeat;
+      background-position-x: 15px;
+      background-position-y: 16px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .submit {
@@ -1019,7 +1021,7 @@ input:focus, textarea:focus {
 }
 
 .footer .conteudo .box-1 ul li a:hover {
-      color: #000;
+      color: #E68C8C;
 }
 
 .footer .conteudo .box-2 {
