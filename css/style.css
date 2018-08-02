@@ -682,6 +682,10 @@ input:focus, textarea:focus {
       border-right: 1px solid rgba(50, 50, 50, 0.1);
 }
 
+.depoimento .depoimento-conteudo .box-clientes .cliente:nth-last-child(2) {
+      border-right: none;
+}
+
 .depoimento .depoimento-conteudo .box-clientes .cliente .avatar-cliente {
       width: 96px;
       border-radius: 50%;
