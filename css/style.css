@@ -79,7 +79,6 @@ input:focus, textarea:focus {
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      border: 1px solid red;
 }
 
 .header .menu .logotipo img {
@@ -97,7 +96,7 @@ input:focus, textarea:focus {
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: .1em;
-      font-size: 0.9em;
+      font-size: 0.7em;
       display: block;
       padding: 10px 0;
       margin-left: 30px;
@@ -105,7 +104,6 @@ input:focus, textarea:focus {
 
 .header .menu .menu-nav ul li a:hover {
       color: #E68C8C;
-      transition-duration: .2s;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -131,7 +129,6 @@ input:focus, textarea:focus {
       -webkit-align-items: center;
       justify-content: space-between;
       height: 100%;
-      border: 1px solid red;
 }
 
 .header-introducao .introducao-conteudo h1 {
@@ -195,22 +192,15 @@ input:focus, textarea:focus {
       background: rgba(0, 0, 0, 0.0);
       color: #63BCC2;
       border: 1px solid white;
-      font-size: 0.9em;
-      font-weight: bolder;
-      font-family: raleway;
 }
 
 .header-introducao .introducao-conteudo .botao-header-introducao {
-      padding: 15px 40px;
+      padding: 15.5px 40px;
       text-transform: uppercase;
       font-size: 0.9em;
       font-weight: 600;
       font-family: raleway;
       color: white;
-}
-
-.header-introducao .introducao-conteudo .botao-header-introducao:hover {
-      
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -631,13 +621,13 @@ input:focus, textarea:focus {
 
 /* TESTIMONIAL */
 
-.testimonial {
-      background-image: url('../img/testimonial/background-3.jpg');
+.depoimento {
+      background-image: url('../img/depoimento/background-3.jpg');
       background-size: cover;
       background-position: center;
 }
 
-.testimonial .testimonial-conteudo {
+.depoimento .depoimento-conteudo {
       height: 100%;
       display: flex;
       display: -webkit-flex;
@@ -650,11 +640,11 @@ input:focus, textarea:focus {
       flex-direction: column;
 }
 
-.testimonial .testimonial-conteudo .conteudo-header {
+.depoimento .depoimento-conteudo .conteudo-header {
       width: 70%;
 }
 
-.testimonial .testimonial-conteudo .conteudo-header h1 {
+.depoimento .depoimento-conteudo .conteudo-header h1 {
       font-size: 2em;
       font-weight: 600;
       text-transform: unset;
@@ -662,7 +652,7 @@ input:focus, textarea:focus {
       margin-bottom: 20px;
 }
 
-.testimonial .testimonial-conteudo .conteudo-header p {
+.depoimento .depoimento-conteudo .conteudo-header p {
       font-size: 1em;
       text-align: center;
       color: #5b596b;
@@ -670,40 +660,29 @@ input:focus, textarea:focus {
       margin-bottom: 40px;
 }
 
-.testimonial .testimonial-conteudo .icon-testimonial {
+.depoimento .depoimento-conteudo .icon-depoimento {
       width: 56px;
       margin-bottom: 40px;
 }
 
-.testimonial .testimonial-conteudo .box-clientes {
+.depoimento .depoimento-conteudo .box-clientes {
       display: flex;
       display: -webkit-flex;
-      align-items: baseline;
-      -webkit-align-items: baseline;
       align-content: center;
-      -webkit-align-content: center;
-      justify-content: center;
-      -webkit-justify-content: center;
+      align-items: stretch;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      flex-wrap: wrap;
 }
 
-.testimonial .testimonial-conteudo .box-clientes .cliente {
-      float: left;
-      width: 25%;
+.depoimento .depoimento-conteudo .box-clientes .cliente {
+      width: 23%;
       text-align: center;
-      padding: 10px 15px;
+      padding: 10px auto;
+      border-right: 1px solid rgba(50, 50, 50, 0.1);
 }
 
-.testimonial .testimonial-conteudo .box-clientes .cliente:hover {
-      border-top-left-radius: 25px;
-      border-bottom-right-radius: 25px;
-      -webkit-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.3);
-      -moz-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.3);
-      box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.3);
-      transition-duration: .5s;
-      cursor: pointer;
-}
-
-.testimonial .testimonial-conteudo .box-clientes .cliente .avatar-cliente {
+.depoimento .depoimento-conteudo .box-clientes .cliente .avatar-cliente {
       width: 96px;
       border-radius: 50%;
       -webkit-border-radius: 50%;
@@ -713,22 +692,22 @@ input:focus, textarea:focus {
       -webkit-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.6);
       -moz-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.6);
       box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.6);
-      border: 0.1em solid rgb(255, 188, 188);
+      border: 1px solid rgba(255, 188, 188, 0.7);
       margin-bottom: 30px;
 }
 
-.testimonial .testimonial-conteudo .box-clientes .cliente span {
+.depoimento .depoimento-conteudo .box-clientes .cliente span {
       display: block;
 }
 
-.testimonial .testimonial-conteudo .box-clientes .cliente .nome {
+.depoimento .depoimento-conteudo .box-clientes .cliente .nome {
       font-size: 0.9em;
       font-weight: 600;
       display: block;
       margin-bottom: 10px;
 }
 
-.testimonial .testimonial-conteudo .box-clientes .cliente .tipo {
+.depoimento .depoimento-conteudo .box-clientes .cliente .tipo {
       display: block;
       font-size: 0.7em;
       color: #73727c;
@@ -736,18 +715,18 @@ input:focus, textarea:focus {
       margin-bottom: 10px;
 }
 
-.testimonial .testimonial-conteudo .box-clientes .cliente .icon-cliente {
+.depoimento .depoimento-conteudo .box-clientes .cliente .icon-cliente {
       width: 16px;
       margin-bottom: 10px;
 }
 
-.testimonial .testimonial-conteudo .box-clientes .cliente .citacao-cliente {
+.depoimento .depoimento-conteudo .box-clientes .cliente .citacao-cliente {
       font-size: 0.7em;
       color: #73727c;
       line-height: 15px;
 }
 
-.testimonial .testimonial-conteudo .box-clientes .cliente .cinco-estrelas {
+.depoimento .depoimento-conteudo .box-clientes .cliente .cinco-estrelas {
       width: 72px;
       margin-top: 30px;
 }
@@ -826,24 +805,36 @@ input:focus, textarea:focus {
       width: 36%;
       margin-right: 3%;
       margin-bottom: 15px;
+      background: url(../img/contato/nome-input.png) no-repeat center;
+      background-size: 15px;
+      background-position-x: 15px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .sobre-nome {
       width: 60%;
+      background: url(../img/contato/nome-input.png) no-repeat center;
+      background-size: 15px;
+      background-position-x: 15px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .telefone {
       width: 36%;
       margin-right: 3%;
+      background: url(../img/contato/telefone-input.png) no-repeat center;
+      background-size: 15px;
+      background-position-x: 15px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .email {
       width: 60%;
+      background: url(../img/contato/email-input.png) no-repeat center;
+      background-position-x: 15px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo ::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 1em;
+      padding-left: 20px;
 }
 
 .contato .contato-conteudo .conteudo-esquerdo .textarea {
